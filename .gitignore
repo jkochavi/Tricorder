@@ -8,3 +8,4 @@ src/doxygen.conf
 src/mainpage.dox
 .DS_Store
 platform.ini
+docs
