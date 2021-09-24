@@ -1,6 +1,9 @@
 .pio
 .vscode
-platform.ini
+include
+lib
+test
 src/TFT_eSPI.cpp
 src/doxygen.conf
 src/mainpage.dox
+.DS_Store
