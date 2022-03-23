@@ -50,6 +50,7 @@ extern lv_obj_t * ui_Image14;
 extern lv_obj_t * ui_Image15;
 extern lv_obj_t * ui_Label1;
 
+void changelabel(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_round_button_png);    // assets\round_button.png
