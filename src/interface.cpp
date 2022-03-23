@@ -70,29 +70,6 @@ void add_pink1_button(lv_obj_t * btn, char * label_text, int x, int y)
     lv_obj_center(label);
 }
 
-
-void add_button(lv_obj_t * btn)
-{
-    /*Halo on press*/
-    static lv_style_t style_halo;
-    lv_style_init(&style_halo);
-    lv_style_set_transition_time(&style_halo, LV_STATE_PRESSED, 400);
-    lv_style_set_transition_time(&style_halo, LV_STATE_DEFAULT, 0);
-    lv_style_set_transition_delay(&style_halo, LV_STATE_DEFAULT, 200);
-    lv_style_set_outline_width(&style_halo, LV_STATE_DEFAULT, 0);
-    lv_style_set_outline_width(&style_halo, LV_STATE_PRESSED, 20);
-    lv_style_set_outline_opa(&style_halo, LV_STATE_DEFAULT, LV_OPA_COVER);
-    lv_style_set_outline_opa(&style_halo, LV_STATE_FOCUSED, LV_OPA_COVER);   /*Just to be sure, the theme might use it*/
-    lv_style_set_outline_opa(&style_halo, LV_STATE_PRESSED, LV_OPA_TRANSP);
-    lv_style_set_transition_prop_1(&style_halo, LV_STATE_DEFAULT, LV_STYLE_OUTLINE_OPA);
-    lv_style_set_transition_prop_2(&style_halo, LV_STATE_DEFAULT, LV_STYLE_OUTLINE_WIDTH);
-
-    lv_obj_t * btn2 = lv_btn_create(lv_scr_act(), NULL);
-    lv_obj_align(btn2, NULL, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_add_style(btn2, LV_BTN_PART_MAIN, &style_halo);
-    lv_obj_set_style_local_value_str(btn2, LV_BTN_PART_MAIN, LV_STATE_DEFAULT, "Halo");
-}
-
 void LCARS_bg(lv_obj_t * scr)
 {
     LV_IMG_DECLARE(homepage);
