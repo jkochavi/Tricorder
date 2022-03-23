@@ -1,6 +1,5 @@
 #include "lvgl.h"
 #include "interface.h"
-#include "GUI/ui.h"
 
 /**********************
  *  STATIC VARIABLES
