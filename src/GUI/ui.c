@@ -626,11 +626,8 @@ void ui_Home_screen_init(void)
     lv_obj_set_y(ui_Round1, 18);
 
     lv_obj_add_event_cb(ui_Round1, ui_event_Round1, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_bg_img_src(ui_Round1, &ui_img_round_button_png, LV_PART_MAIN | LV_STATE_CHECKED);
     lv_obj_set_style_img_recolor(ui_Round1, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_Round1, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_bg_img_recolor(ui_Round1, lv_color_hex(0x4040B4), LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
-    lv_obj_set_style_bg_img_recolor_opa(ui_Round1, 255, LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
 
     // ui_Round2
 
