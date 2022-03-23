@@ -610,7 +610,6 @@ void ui_Home_screen_init(void)
     ui_Round1 = lv_imgbtn_create(ui_Home);
     lv_imgbtn_set_src(ui_Round1, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_round_button_png, NULL);
     lv_imgbtn_set_src(ui_Round1, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_round_button_png, NULL);
-    lv_imgbtn_set_src(ui_Round1, LV_IMGBTN_STATE_CHECKED_RELEASED, NULL, &ui_img_round_button_png, NULL);
 
     lv_obj_set_height(ui_Round1, 16);
     lv_obj_set_width(ui_Round1, LV_SIZE_CONTENT);
@@ -618,13 +617,8 @@ void ui_Home_screen_init(void)
     lv_obj_set_x(ui_Round1, 32);
     lv_obj_set_y(ui_Round1, 18);
 
-    lv_obj_set_style_bg_img_src(ui_Round1, &ui_img_round_button_png, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_img_src(ui_Round1, &ui_img_round_button_png, LV_PART_MAIN | LV_STATE_CHECKED);
     lv_obj_set_style_img_recolor(ui_Round1, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_Round1, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_bg_img_src(ui_Round1, &ui_img_round_button_png, LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
-    lv_obj_set_style_bg_img_recolor(ui_Round1, lv_color_hex(0x4040B4), LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
-    lv_obj_set_style_bg_img_recolor_opa(ui_Round1, 255, LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
 
     // ui_Round2
 
