@@ -40,7 +40,7 @@ lv_obj_t * ui_Image13;
 lv_obj_t * ui_Image14;
 lv_obj_t * ui_Image15;
 lv_obj_t * ui_Label1;
-lv_obj_t * ui_Image16;
+lv_obj_t * ui_ImgButton20;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -1081,21 +1081,19 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label1, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_Image16
+    // ui_ImgButton20
 
-    ui_Image16 = lv_img_create(ui_Home);
-    lv_img_set_src(ui_Image16, &ui_img_round_button_png);
+    ui_ImgButton20 = lv_imgbtn_create(ui_Home);
+    lv_imgbtn_set_src(ui_ImgButton20, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_round_button_png, NULL);
+    lv_imgbtn_set_src(ui_ImgButton20, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_round2_png, NULL);
 
-    lv_obj_set_width(ui_Image16, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_Image16, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_ImgButton20, 16);
+    lv_obj_set_width(ui_ImgButton20, LV_SIZE_CONTENT);
 
-    lv_obj_set_x(ui_Image16, 11);
-    lv_obj_set_y(ui_Image16, 11);
+    lv_obj_set_x(ui_ImgButton20, 80);
+    lv_obj_set_y(ui_ImgButton20, 23);
 
-    lv_obj_set_align(ui_Image16, LV_ALIGN_CENTER);
-
-    lv_obj_add_flag(ui_Image16, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_Image16, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_align(ui_ImgButton20, LV_ALIGN_CENTER);
 
 }
 
