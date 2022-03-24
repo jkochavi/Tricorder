@@ -48,6 +48,7 @@ lv_obj_t * ui_console;
 lv_obj_t * ui_coms;
 lv_obj_t * ui_settings;
 lv_obj_t * ui_lcars;
+lv_obj_t * ui_Image17;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -1223,6 +1224,27 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_text_color(ui_lcars, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_lcars, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_lcars, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // ui_Image17
+
+    ui_Image17 = lv_img_create(ui_Home);
+    lv_img_set_src(ui_Image17, &ui_img_round_button_png);
+
+    lv_obj_set_width(ui_Image17, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_Image17, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_Image17, 38);
+    lv_obj_set_y(ui_Image17, 9);
+
+    lv_obj_set_align(ui_Image17, LV_ALIGN_CENTER);
+
+    lv_obj_add_flag(ui_Image17, LV_OBJ_FLAG_ADV_HITTEST);
+    lv_obj_clear_flag(ui_Image17, LV_OBJ_FLAG_SCROLLABLE);
+
+    lv_obj_set_style_img_recolor(ui_Image17, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_Image17, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor(ui_Image17, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_Image17, 150, LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
 
 }
 
