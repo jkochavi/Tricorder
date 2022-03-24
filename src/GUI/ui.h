@@ -57,7 +57,7 @@ extern lv_obj_t * ui_console;
 extern lv_obj_t * ui_coms;
 extern lv_obj_t * ui_settings;
 extern lv_obj_t * ui_lcars;
-extern lv_obj_t * ui_ImgButton21;
+extern lv_obj_t * ui_Image18;
 
 void changelabel(lv_event_t * e);
 void updatechart(lv_event_t * e);
