@@ -1,7 +1,6 @@
 #include "Arduino.h"
 #include "TFT_eSPI.h"
 #include "lvgl.h"
-#include "interface.h"
 #include "GUI/ui.h"
 
 TFT_eSPI tft = TFT_eSPI(); /* TFT instance */
@@ -71,9 +70,7 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
-   //interface();
    ui_init();
-
 }
 
 void loop()
