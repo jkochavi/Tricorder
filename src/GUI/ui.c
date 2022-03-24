@@ -841,7 +841,7 @@ void ui_Home_screen_init(void)
     lv_obj_set_x(ui_Battery, 61);
     lv_obj_set_y(ui_Battery, 17);
 
-    lv_label_set_text(ui_Battery, "BATT 100%");
+    lv_label_set_text(ui_Battery, "INIT BATT");
 
     lv_obj_set_style_text_color(ui_Battery, lv_color_hex(0x68CCFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Battery, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
