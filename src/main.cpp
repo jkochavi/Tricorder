@@ -2,6 +2,7 @@
 #include "TFT_eSPI.h"
 #include "lvgl.h"
 #include "GUI/ui.h"
+#include "timerfuncs.h"
 
 TFT_eSPI tft = TFT_eSPI(); 
 static const uint32_t screenWidth  = 320;
@@ -54,6 +55,7 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
+   lv_timer_create(batterytimer, 500, NULL);
    ui_init();
 }
 
