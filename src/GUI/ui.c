@@ -48,7 +48,7 @@ lv_obj_t * ui_console;
 lv_obj_t * ui_coms;
 lv_obj_t * ui_settings;
 lv_obj_t * ui_lcars;
-lv_obj_t * ui_Image17;
+lv_obj_t * ui_ImgButton21;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -1225,26 +1225,22 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_text_opa(ui_lcars, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_lcars, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_Image17
+    // ui_ImgButton21
 
-    ui_Image17 = lv_img_create(ui_Home);
-    lv_img_set_src(ui_Image17, &ui_img_round_button_png);
+    ui_ImgButton21 = lv_imgbtn_create(ui_Home);
+    lv_imgbtn_set_src(ui_ImgButton21, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_square1_png, NULL);
+    lv_imgbtn_set_src(ui_ImgButton21, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_square1_png, NULL);
 
-    lv_obj_set_width(ui_Image17, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_Image17, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_ImgButton21, 16);
+    lv_obj_set_width(ui_ImgButton21, LV_SIZE_CONTENT);
 
-    lv_obj_set_x(ui_Image17, 38);
-    lv_obj_set_y(ui_Image17, 9);
+    lv_obj_set_x(ui_ImgButton21, 0);
+    lv_obj_set_y(ui_ImgButton21, 20);
 
-    lv_obj_set_align(ui_Image17, LV_ALIGN_CENTER);
+    lv_obj_set_align(ui_ImgButton21, LV_ALIGN_CENTER);
 
-    lv_obj_add_flag(ui_Image17, LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_Image17, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_img_recolor(ui_Image17, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_Image17, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor(ui_Image17, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_Image17, 150, LV_PART_MAIN | LV_STATE_CHECKED | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor(ui_ImgButton21, lv_color_hex(0x003200), LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_ImgButton21, 100, LV_PART_MAIN | LV_STATE_PRESSED);
 
 }
 
