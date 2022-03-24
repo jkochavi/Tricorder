@@ -9,3 +9,8 @@ void changelabel(lv_event_t * e)
 {
 	lv_label_set_text(ui_Label1, "BLARG");
 }
+
+void updatechart(lv_event_t * e)
+{
+	// Your code here
+}
