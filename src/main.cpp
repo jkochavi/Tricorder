@@ -55,7 +55,8 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
-   lv_timer_create(batterytimer, 5000, NULL);
+   lv_timer_create(batterytimer, 30000, NULL);
+   lv_timer_create(squarestimer, 1000, NULL);
    ui_init();
 }
 
