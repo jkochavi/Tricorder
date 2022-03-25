@@ -55,7 +55,7 @@ void squarestimer(lv_timer_t * timer)
     uint8_t num = random(0,4);
     lv_obj_t * square = chooseSquare(sq);
     if (!num) {lv_img_set_src(square, &ui_img_square1_png);}
-    if (num==1) {lv_img_set_src(square, &ui_img_square2_png);}
-    if (num==2) {lv_img_set_src(square, &ui_img_square3_png);}
-    if (num==3) {lv_img_set_src(square, &ui_img_square4_png);}
+    else if (num==1) {lv_img_set_src(square, &ui_img_square2_png);}
+    else if (num==2) {lv_img_set_src(square, &ui_img_square3_png);}
+    else if (num==3) {lv_img_set_src(square, &ui_img_square4_png);}
 }
