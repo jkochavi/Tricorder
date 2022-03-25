@@ -56,8 +56,10 @@ void setup()
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
    lv_timer_create(batterytimer, 30000, NULL);
-   lv_timer_create(squarestimer, 1000, NULL);
+   lv_timer_create(squarestimer, 2000, NULL);
    ui_init();
+   float battery_level = batterylevel();
+   lv_label_set_text_fmt(ui_Battery, "BATT %d%s", (int)battery_level, "%");
 }
 
 void loop()

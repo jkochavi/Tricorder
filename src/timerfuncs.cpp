@@ -4,44 +4,58 @@
 
 #define batteryPin 35 // GPIO for reading the battery level
 
-lv_obj_t * squaresArray = (ui_Square1,ui_Square2,ui_Square3,ui_Square4,ui_Square5,ui_Square6,
-ui_Square7,ui_Square8,ui_Square9,ui_Square10,ui_Square11,ui_Square12,ui_Square13,
-ui_Square14,ui_Square15);
-
-const lv_img_dsc_t imageArray = (ui_img_square1_png,ui_img_square2_png,
-ui_img_square3_png,ui_img_square4_png);
-
-void batterytimer(lv_timer_t * timer) 
+float batterylevel()
 {
     float battery_level = analogRead(batteryPin);
     battery_level *= 2;
     battery_level *= 3.3;
     battery_level /= 1024;
+    return battery_level;
+}
+
+void batterytimer(lv_timer_t * timer) 
+{
+    float battery_level = batterylevel();
     lv_label_set_text_fmt(ui_Battery, "BATT %d%s", (int)battery_level, "%");
 }
 
-const lv_img_dsc_t chooseSquare(uint8_t randnum)
+lv_obj_t * chooseSquare(uint8_t randnum)
 {
-    const lv_img_dsc_t imC = ui_img_square1_png;
-    if (randnum == 1) {const lv_img_dsc_t imC = ui_img_square2_png;}
-    else if (randnum == 2) {const lv_img_dsc_t imC = ui_img_square3_png;}
-    else if (randnum == 3) {const lv_img_dsc_t imC = ui_img_square4_png;}
-    return imC;
+    lv_obj_t * returnSq = ui_Square1;
+    if (randnum == 1) {returnSq = ui_Square2;}
+    else if (randnum == 2) {returnSq = ui_Square3;}
+    else if (randnum == 3) {returnSq = ui_Square4;}
+    else if (randnum == 4) {returnSq = ui_Square5;}
+    else if (randnum == 5) {returnSq = ui_Square6;}
+    else if (randnum == 6) {returnSq = ui_Square7;}
+    else if (randnum == 7) {returnSq = ui_Square8;}
+    else if (randnum == 8) {returnSq = ui_Square9;}
+    else if (randnum == 9) {returnSq = ui_Square10;}
+    else if (randnum == 10) {returnSq = ui_Square11;}
+    else if (randnum == 11) {returnSq = ui_Square12;}
+    else if (randnum == 12) {returnSq = ui_Square13;}
+    else if (randnum == 13) {returnSq = ui_Square14;}
+    else if (randnum == 14) {returnSq = ui_Square15;}
+    return returnSq;   
+}
+
+const lv_img_dsc_t chooseImage(uint8_t randnum)
+{
+    lv_img_dsc_t returnIm = ui_img_square1_png;
+    if (randnum == 1) {returnIm = ui_img_square2_png;}
+    else if (randnum == 2) {returnIm = ui_img_square3_png;}
+    else if (randnum == 3) {returnIm = ui_img_square4_png;}
+    else {returnIm = ui_img_square1_png;}
+    return returnIm;
 }
 
 void squarestimer(lv_timer_t * timer)
 {
-    // Choose random squares
-    uint8_t sq1 = random(0,14);
-    uint8_t sq2 = random(0,14); while (sq2==sq1) {sq2 = random(0,14);}
-    uint8_t sq3 = random(0,14); while (sq3==sq1 || sq3==sq2) {sq3 = random(0,14);}
-
-    // Choose random images
-    const lv_img_dsc_t im1 = chooseSquare(random(0,3));
-    const lv_img_dsc_t im2 = chooseSquare(random(0,3));
-    const lv_img_dsc_t im3 = chooseSquare(random(0,3));
-
-    lv_img_set_src(&squaresArray[sq1], &im1);
-    lv_img_set_src(&squaresArray[sq2], &im2);
-    lv_img_set_src(&squaresArray[sq3], &im3);
+    uint8_t sq = random(0,14);
+    uint8_t num = random(0,4);
+    lv_obj_t * square = chooseSquare(sq);
+    if (!num) {lv_img_set_src(square, &ui_img_square1_png);}
+    if (num==1) {lv_img_set_src(square, &ui_img_square2_png);}
+    if (num==2) {lv_img_set_src(square, &ui_img_square3_png);}
+    if (num==3) {lv_img_set_src(square, &ui_img_square4_png);}
 }
