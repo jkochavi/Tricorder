@@ -8,8 +8,9 @@ float batterylevel()
 {
     float battery_level = analogRead(batteryPin);
     battery_level *= 2;
-    battery_level *= 3.3;
-    battery_level /= 1024;
+    battery_level /= 4096;
+    battery_level *= 100;
+    if (battery_level > 100) {battery_level=100;}
     return battery_level;
 }
 
