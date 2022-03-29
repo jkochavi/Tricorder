@@ -25,8 +25,8 @@ lv_obj_t * ui_wifisetup;
 lv_obj_t * ui_wifiback;
 lv_obj_t * ui_wifioptions;
 lv_obj_t * ui_Label1;
-lv_obj_t * ui_Keyboard1;
 lv_obj_t * ui_password;
+lv_obj_t * ui_Keyboard3;
 lv_obj_t * ui_bluetoothsetup;
 lv_obj_t * ui_Image2;
 lv_obj_t * ui_Roller2;
@@ -72,18 +72,7 @@ static void ui_event_wifioptions(lv_event_t * e)
     lv_event_code_t event = lv_event_get_code(e);
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
-        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_REMOVE);
         _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-    }
-}
-static void ui_event_Keyboard1(lv_event_t * e)
-{
-    lv_event_code_t event = lv_event_get_code(e);
-    lv_obj_t * ta = lv_event_get_target(e);
-    if(event == LV_EVENT_READY) {
-        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-        _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-        wificonnect(e);
     }
 }
 static void ui_event_Image2(lv_event_t * e)
@@ -408,18 +397,6 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label1, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_Keyboard1
-
-    ui_Keyboard1 = lv_keyboard_create(ui_wifisetup);
-
-    lv_obj_set_width(ui_Keyboard1, 320);
-    lv_obj_set_height(ui_Keyboard1, 120);
-
-    lv_obj_set_x(ui_Keyboard1, 0);
-    lv_obj_set_y(ui_Keyboard1, 120);
-
-    lv_obj_add_event_cb(ui_Keyboard1, ui_event_Keyboard1, LV_EVENT_ALL, NULL);
-
     // ui_password
 
     ui_password = lv_textarea_create(ui_wifisetup);
@@ -451,8 +428,20 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_style_text_color(ui_password, lv_color_hex(0xFFEE8B), LV_PART_SELECTED | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_password, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
 
+    // ui_Keyboard3
+
+    ui_Keyboard3 = lv_keyboard_create(ui_wifisetup);
+
+    lv_obj_set_width(ui_Keyboard3, 300);
+    lv_obj_set_height(ui_Keyboard3, 120);
+
+    lv_obj_set_x(ui_Keyboard3, 0);
+    lv_obj_set_y(ui_Keyboard3, 0);
+
+    lv_obj_set_align(ui_Keyboard3, LV_ALIGN_CENTER);
+
     // POST CALLS
-    lv_keyboard_set_textarea(ui_Keyboard1, ui_password);
+    lv_keyboard_set_textarea(ui_Keyboard3, ui_password);
 
 }
 void ui_bluetoothsetup_screen_init(void)
