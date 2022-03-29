@@ -35,12 +35,13 @@ extern lv_obj_t * ui_wifiback;
 extern lv_obj_t * ui_wifioptions;
 extern lv_obj_t * ui_Label1;
 extern lv_obj_t * ui_password;
-extern lv_obj_t * ui_Keyboard5;
+extern lv_obj_t * ui_wifikeyboard;
 extern lv_obj_t * ui_bluetoothsetup;
 extern lv_obj_t * ui_Image2;
 extern lv_obj_t * ui_Roller2;
 extern lv_obj_t * ui_Label2;
 
+void wificonnect(lv_event_t * e);
 void bluetoothconnect(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png

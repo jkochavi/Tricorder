@@ -26,7 +26,7 @@ lv_obj_t * ui_wifiback;
 lv_obj_t * ui_wifioptions;
 lv_obj_t * ui_Label1;
 lv_obj_t * ui_password;
-lv_obj_t * ui_Keyboard5;
+lv_obj_t * ui_wifikeyboard;
 lv_obj_t * ui_bluetoothsetup;
 lv_obj_t * ui_Image2;
 lv_obj_t * ui_Roller2;
@@ -72,7 +72,18 @@ static void ui_event_wifioptions(lv_event_t * e)
     lv_event_code_t event = lv_event_get_code(e);
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
+        _ui_flag_modify(ui_wifikeyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+    }
+}
+static void ui_event_wifikeyboard(lv_event_t * e)
+{
+    lv_event_code_t event = lv_event_get_code(e);
+    lv_obj_t * ta = lv_event_get_target(e);
+    if(event == LV_EVENT_READY) {
+        _ui_flag_modify(ui_wifikeyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        wificonnect(e);
     }
 }
 static void ui_event_Image2(lv_event_t * e)
@@ -428,20 +439,26 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_style_text_color(ui_password, lv_color_hex(0xFFEE8B), LV_PART_SELECTED | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_password, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
 
-    // ui_Keyboard5
+    // ui_wifikeyboard
 
-    ui_Keyboard5 = lv_keyboard_create(ui_wifisetup);
+    ui_wifikeyboard = lv_keyboard_create(ui_wifisetup);
 
-    lv_obj_set_width(ui_Keyboard5, 320);
-    lv_obj_set_height(ui_Keyboard5, 120);
+    lv_obj_set_width(ui_wifikeyboard, 320);
+    lv_obj_set_height(ui_wifikeyboard, 120);
 
-    lv_obj_set_x(ui_Keyboard5, 0);
-    lv_obj_set_y(ui_Keyboard5, 60);
+    lv_obj_set_x(ui_wifikeyboard, 0);
+    lv_obj_set_y(ui_wifikeyboard, 60);
 
-    lv_obj_set_align(ui_Keyboard5, LV_ALIGN_CENTER);
+    lv_obj_set_align(ui_wifikeyboard, LV_ALIGN_CENTER);
+
+    lv_obj_add_flag(ui_wifikeyboard, LV_OBJ_FLAG_HIDDEN);
+
+    lv_obj_add_event_cb(ui_wifikeyboard, ui_event_wifikeyboard, LV_EVENT_ALL, NULL);
+    lv_obj_set_style_bg_color(ui_wifikeyboard, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_wifikeyboard, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // POST CALLS
-    lv_keyboard_set_textarea(ui_Keyboard5, ui_password);
+    lv_keyboard_set_textarea(ui_wifikeyboard, ui_password);
 
 }
 void ui_bluetoothsetup_screen_init(void)
