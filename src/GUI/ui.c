@@ -26,7 +26,7 @@ lv_obj_t * ui_wifiback;
 lv_obj_t * ui_wifioptions;
 lv_obj_t * ui_Label1;
 lv_obj_t * ui_password;
-lv_obj_t * ui_Keyboard4;
+lv_obj_t * ui_Keyboard5;
 lv_obj_t * ui_bluetoothsetup;
 lv_obj_t * ui_Image2;
 lv_obj_t * ui_Roller2;
@@ -428,18 +428,20 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_style_text_color(ui_password, lv_color_hex(0xFFEE8B), LV_PART_SELECTED | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_password, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
 
-    // ui_Keyboard4
+    // ui_Keyboard5
 
-    ui_Keyboard4 = lv_keyboard_create(ui_wifisetup);
+    ui_Keyboard5 = lv_keyboard_create(ui_wifisetup);
 
-    lv_obj_set_width(ui_Keyboard4, 300);
-    lv_obj_set_height(ui_Keyboard4, 120);
+    lv_obj_set_width(ui_Keyboard5, 300);
+    lv_obj_set_height(ui_Keyboard5, 120);
 
-    lv_obj_set_x(ui_Keyboard4, 10);
-    lv_obj_set_y(ui_Keyboard4, 110);
+    lv_obj_set_x(ui_Keyboard5, 0);
+    lv_obj_set_y(ui_Keyboard5, 50);
+
+    lv_obj_set_align(ui_Keyboard5, LV_ALIGN_CENTER);
 
     // POST CALLS
-    lv_keyboard_set_textarea(ui_Keyboard4, ui_password);
+    lv_keyboard_set_textarea(ui_Keyboard5, ui_password);
 
 }
 void ui_bluetoothsetup_screen_init(void)
