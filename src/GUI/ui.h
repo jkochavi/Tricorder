@@ -30,6 +30,7 @@ extern lv_obj_t * ui_b5;
 extern lv_obj_t * ui_b6;
 extern lv_obj_t * ui_Chart1;
 extern lv_obj_t * ui_console;
+extern lv_obj_t * ui_Keyboard2;
 extern lv_obj_t * ui_wifisetup;
 extern lv_obj_t * ui_wifiback;
 extern lv_obj_t * ui_wifioptions;
