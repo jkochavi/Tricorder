@@ -432,11 +432,11 @@ void ui_wifisetup_screen_init(void)
 
     ui_Keyboard5 = lv_keyboard_create(ui_wifisetup);
 
-    lv_obj_set_width(ui_Keyboard5, 300);
+    lv_obj_set_width(ui_Keyboard5, 320);
     lv_obj_set_height(ui_Keyboard5, 120);
 
     lv_obj_set_x(ui_Keyboard5, 0);
-    lv_obj_set_y(ui_Keyboard5, 50);
+    lv_obj_set_y(ui_Keyboard5, 60);
 
     lv_obj_set_align(ui_Keyboard5, LV_ALIGN_CENTER);
 
