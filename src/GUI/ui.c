@@ -421,8 +421,6 @@ void ui_wifisetup_screen_init(void)
     lv_obj_add_flag(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN);
 
     lv_obj_add_event_cb(ui_Keyboard1, ui_event_Keyboard1, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_bg_color(ui_Keyboard1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Keyboard1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // ui_password
 
