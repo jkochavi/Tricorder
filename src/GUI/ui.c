@@ -74,6 +74,7 @@ static void ui_event_wifioptions(lv_event_t * e)
     if(event == LV_EVENT_CLICKED) {
         _ui_flag_modify(ui_wifikeyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        OptionsPanelSmall(e);
     }
 }
 static void ui_event_wifikeyboard(lv_event_t * e)
@@ -84,6 +85,7 @@ static void ui_event_wifikeyboard(lv_event_t * e)
         _ui_flag_modify(ui_wifikeyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         wificonnect(e);
+        OptionsPanelBig(e);
     }
 }
 static void ui_event_Image2(lv_event_t * e)

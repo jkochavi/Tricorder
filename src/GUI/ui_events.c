@@ -14,3 +14,13 @@ void bluetoothconnect(lv_event_t * e)
 {
 	// Your code here
 }
+
+void OptionsPanelSmall(lv_event_t * e)
+{
+	// Your code here
+}
+
+void OptionsPanelBig(lv_event_t * e)
+{
+	// Your code here
+}

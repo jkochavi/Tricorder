@@ -41,7 +41,9 @@ extern lv_obj_t * ui_Image2;
 extern lv_obj_t * ui_Roller2;
 extern lv_obj_t * ui_Label2;
 
+void OptionsPanelSmall(lv_event_t * e);
 void wificonnect(lv_event_t * e);
+void OptionsPanelBig(lv_event_t * e);
 void bluetoothconnect(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
