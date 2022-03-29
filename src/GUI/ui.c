@@ -21,7 +21,6 @@ lv_obj_t * ui_b5;
 lv_obj_t * ui_b6;
 lv_obj_t * ui_Chart1;
 lv_obj_t * ui_console;
-lv_obj_t * ui_Keyboard2;
 lv_obj_t * ui_wifisetup;
 lv_obj_t * ui_wifiback;
 lv_obj_t * ui_wifioptions;
@@ -339,21 +338,6 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_text_opa(ui_console, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_console, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_Keyboard2
-
-    ui_Keyboard2 = lv_keyboard_create(ui_Home);
-
-    lv_obj_set_width(ui_Keyboard2, 300);
-    lv_obj_set_height(ui_Keyboard2, 120);
-
-    lv_obj_set_x(ui_Keyboard2, 0);
-    lv_obj_set_y(ui_Keyboard2, 0);
-
-    lv_obj_set_align(ui_Keyboard2, LV_ALIGN_CENTER);
-
-    // POST CALLS
-    lv_keyboard_set_textarea(ui_Keyboard2, ui_password);
-
 }
 void ui_wifisetup_screen_init(void)
 {
@@ -433,8 +417,6 @@ void ui_wifisetup_screen_init(void)
 
     lv_obj_set_x(ui_Keyboard1, 0);
     lv_obj_set_y(ui_Keyboard1, 120);
-
-    lv_obj_add_flag(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN);
 
     lv_obj_add_event_cb(ui_Keyboard1, ui_event_Keyboard1, LV_EVENT_ALL, NULL);
 
