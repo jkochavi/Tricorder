@@ -10,11 +10,9 @@
 extern "C" {
 #endif
 
-#if __has_include("lvgl.h")
+
 #include "lvgl.h"
-#else
-#include "lvgl/lvgl.h"
-#endif
+
 
 extern lv_obj_t * ui_Home;
 extern lv_obj_t * ui_battery;
