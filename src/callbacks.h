@@ -1,5 +1,4 @@
-#define SMALL 0
-#define LARGE 1
+#include "Arduino.h"
 
 void resizeWifiOptionsPanel(bool size);
 
