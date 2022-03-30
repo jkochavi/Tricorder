@@ -4,6 +4,7 @@
 // PROJECT: Tricorder2
 
 #include "ui.h"
+#include "callbacks.h"
 
 void wificonnect(lv_event_t * e)
 {
@@ -17,10 +18,10 @@ void bluetoothconnect(lv_event_t * e)
 
 void OptionsPanelSmall(lv_event_t * e)
 {
-	// Your code here
+	resizeWifiOptionsPanel(false);
 }
 
 void OptionsPanelBig(lv_event_t * e)
 {
-	// Your code here
+	resizeWifiOptionsPanel(true);
 }
