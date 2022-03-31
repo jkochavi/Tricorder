@@ -1,5 +1,5 @@
 // SquareLine LVGL GENERATED FILE
-// EDITOR VERSION: SquareLine Studio 1.0.4
+// EDITOR VERSION: SquareLine Studio 1.0.5
 // LVGL VERSION: 8.2
 // PROJECT: Tricorder2
 
@@ -535,6 +535,10 @@ void ui_bluetoothsetup_screen_init(void)
 
 void ui_init(void)
 {
+    lv_disp_t * dispp = lv_disp_get_default();
+    lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
+                                               false, LV_FONT_DEFAULT);
+    lv_disp_set_theme(dispp, theme);
     ui_Home_screen_init();
     ui_wifisetup_screen_init();
     ui_bluetoothsetup_screen_init();
