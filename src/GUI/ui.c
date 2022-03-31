@@ -27,10 +27,6 @@ lv_obj_t * ui_wifioptions;
 lv_obj_t * ui_Label1;
 lv_obj_t * ui_password;
 lv_obj_t * ui_wifikeyboard;
-lv_obj_t * ui_bluetoothsetup;
-lv_obj_t * ui_Image2;
-lv_obj_t * ui_Roller2;
-lv_obj_t * ui_Label2;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -55,9 +51,6 @@ static void ui_event_btbutton(lv_event_t * e)
 {
     lv_event_code_t event = lv_event_get_code(e);
     lv_obj_t * ta = lv_event_get_target(e);
-    if(event == LV_EVENT_CLICKED) {
-        _ui_screen_change(ui_bluetoothsetup, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0);
-    }
 }
 static void ui_event_wifiback(lv_event_t * e)
 {
@@ -86,22 +79,6 @@ static void ui_event_wifikeyboard(lv_event_t * e)
         _ui_flag_modify(ui_password, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         wificonnect(e);
         OptionsPanelBig(e);
-    }
-}
-static void ui_event_Image2(lv_event_t * e)
-{
-    lv_event_code_t event = lv_event_get_code(e);
-    lv_obj_t * ta = lv_event_get_target(e);
-    if(event == LV_EVENT_CLICKED) {
-        _ui_screen_change(ui_Home, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0);
-    }
-}
-static void ui_event_Roller2(lv_event_t * e)
-{
-    lv_event_code_t event = lv_event_get_code(e);
-    lv_obj_t * ta = lv_event_get_target(e);
-    if(event == LV_EVENT_CLICKED) {
-        bluetoothconnect(e);
     }
 }
 
@@ -381,6 +358,8 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_x(ui_wifioptions, 195);
     lv_obj_set_y(ui_wifioptions, 30);
 
+    lv_obj_add_flag(ui_wifioptions, LV_OBJ_FLAG_CHECKABLE);
+
     lv_obj_add_event_cb(ui_wifioptions, ui_event_wifioptions, LV_EVENT_ALL, NULL);
     lv_obj_set_style_text_font(ui_wifioptions, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui_wifioptions, 3, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -393,6 +372,9 @@ void ui_wifisetup_screen_init(void)
     lv_obj_set_style_radius(ui_wifioptions, 5, LV_PART_SELECTED | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_wifioptions, lv_color_hex(0xFFEE8B), LV_PART_SELECTED | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_wifioptions, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui_wifioptions, 5, LV_PART_SELECTED | LV_STATE_PRESSED);
+    lv_obj_set_style_bg_color(ui_wifioptions, lv_color_hex(0x8F854F), LV_PART_SELECTED | LV_STATE_PRESSED);
+    lv_obj_set_style_bg_opa(ui_wifioptions, 255, LV_PART_SELECTED | LV_STATE_PRESSED);
 
     // ui_Label1
 
@@ -463,75 +445,6 @@ void ui_wifisetup_screen_init(void)
     lv_keyboard_set_textarea(ui_wifikeyboard, ui_password);
 
 }
-void ui_bluetoothsetup_screen_init(void)
-{
-
-    // ui_bluetoothsetup
-
-    ui_bluetoothsetup = lv_obj_create(NULL);
-
-    lv_obj_clear_flag(ui_bluetoothsetup, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_bg_img_src(ui_bluetoothsetup, &ui_img_bluetoothscreen_png, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    // ui_Image2
-
-    ui_Image2 = lv_img_create(ui_bluetoothsetup);
-    lv_img_set_src(ui_Image2, &ui_img_halfbutton4_png);
-
-    lv_obj_set_width(ui_Image2, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_Image2, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_Image2, 132);
-    lv_obj_set_y(ui_Image2, 20);
-
-    lv_obj_add_flag(ui_Image2, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_Image2, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_add_event_cb(ui_Image2, ui_event_Image2, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_img_recolor(ui_Image2, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_Image2, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_Roller2
-
-    ui_Roller2 = lv_roller_create(ui_bluetoothsetup);
-    lv_roller_set_options(ui_Roller2, "Option 1\nOption 2\nOption 3\nOption 4", LV_ROLLER_MODE_NORMAL);
-
-    lv_obj_set_width(ui_Roller2, 123);
-    lv_obj_set_height(ui_Roller2, 180);
-
-    lv_obj_set_x(ui_Roller2, 195);
-    lv_obj_set_y(ui_Roller2, 30);
-
-    lv_obj_add_event_cb(ui_Roller2, ui_event_Roller2, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_text_font(ui_Roller2, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui_Roller2, 3, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Roller2, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Roller2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_set_style_text_color(ui_Roller2, lv_color_hex(0x000000), LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_Roller2, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui_Roller2, 5, LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Roller2, lv_color_hex(0xFFEE8B), LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Roller2, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
-
-    // ui_Label2
-
-    ui_Label2 = lv_label_create(ui_bluetoothsetup);
-
-    lv_obj_set_width(ui_Label2, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_Label2, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_Label2, 32);
-    lv_obj_set_y(ui_Label2, 62);
-
-    lv_label_set_text(ui_Label2, "NOT CONNECTED");
-
-    lv_obj_set_style_text_color(ui_Label2, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_Label2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label2, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-}
 
 void ui_init(void)
 {
@@ -541,7 +454,6 @@ void ui_init(void)
     lv_disp_set_theme(dispp, theme);
     ui_Home_screen_init();
     ui_wifisetup_screen_init();
-    ui_bluetoothsetup_screen_init();
     lv_disp_load_scr(ui_Home);
 }
 

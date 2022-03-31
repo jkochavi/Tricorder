@@ -36,15 +36,10 @@ extern lv_obj_t * ui_wifioptions;
 extern lv_obj_t * ui_Label1;
 extern lv_obj_t * ui_password;
 extern lv_obj_t * ui_wifikeyboard;
-extern lv_obj_t * ui_bluetoothsetup;
-extern lv_obj_t * ui_Image2;
-extern lv_obj_t * ui_Roller2;
-extern lv_obj_t * ui_Label2;
 
 void OptionsPanelSmall(lv_event_t * e);
 void wificonnect(lv_event_t * e);
 void OptionsPanelBig(lv_event_t * e);
-void bluetoothconnect(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton1_png);    // assets\halfbutton1.png
@@ -53,7 +48,6 @@ LV_IMG_DECLARE(ui_img_halfbutton2_png);    // assets\halfbutton2.png
 LV_IMG_DECLARE(ui_img_halfbutton3_png);    // assets\halfbutton3.png
 LV_IMG_DECLARE(ui_img_fullbutton1_png);    // assets\fullbutton1.png
 LV_IMG_DECLARE(ui_img_wifiscreen_png);    // assets\wifiscreen.png
-LV_IMG_DECLARE(ui_img_bluetoothscreen_png);    // assets\bluetoothscreen.png
 
 
 LV_FONT_DECLARE(ui_font_Regular_Text);
