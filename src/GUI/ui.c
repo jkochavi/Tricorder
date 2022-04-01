@@ -21,6 +21,7 @@ lv_obj_t * ui_b5;
 lv_obj_t * ui_b6;
 lv_obj_t * ui_Chart1;
 lv_obj_t * ui_console;
+lv_obj_t * ui_Button1;
 lv_obj_t * ui_wifisetup;
 lv_obj_t * ui_wifiback;
 lv_obj_t * ui_wifioptions;
@@ -316,6 +317,21 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_text_color(ui_console, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_console, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_console, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // ui_Button1
+
+    ui_Button1 = lv_btn_create(ui_Home);
+
+    lv_obj_set_width(ui_Button1, 100);
+    lv_obj_set_height(ui_Button1, 50);
+
+    lv_obj_set_x(ui_Button1, 93);
+    lv_obj_set_y(ui_Button1, -32);
+
+    lv_obj_set_align(ui_Button1, LV_ALIGN_CENTER);
+
+    lv_obj_add_flag(ui_Button1, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
+    lv_obj_clear_flag(ui_Button1, LV_OBJ_FLAG_SCROLLABLE);
 
 }
 void ui_wifisetup_screen_init(void)
