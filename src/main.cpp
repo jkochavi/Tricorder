@@ -65,5 +65,6 @@ void loop()
 {
    lv_timer_handler();
    delay(5);
+   lv_tick_inc(5);
 }
 
