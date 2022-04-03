@@ -25,3 +25,8 @@ void OptionsPanelBig(lv_event_t * e)
 {
 	resizeWifiOptionsPanel(true);
 }
+
+void wifiScan(lv_event_t * e)
+{
+	// Your code here
+}

@@ -41,6 +41,7 @@ extern lv_obj_t * ui_wifikeyboard;
 void OptionsPanelSmall(lv_event_t * e);
 void wificonnect(lv_event_t * e);
 void OptionsPanelBig(lv_event_t * e);
+void wifiScan(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton1_png);    // assets\halfbutton1.png

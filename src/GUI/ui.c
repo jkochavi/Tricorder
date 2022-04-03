@@ -46,6 +46,7 @@ static void ui_event_wifibutton(lv_event_t * e)
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
         _ui_screen_change(ui_wifisetup, LV_SCR_LOAD_ANIM_FADE_ON, 5, 0);
+        wifiScan(e);
     }
 }
 static void ui_event_btbutton(lv_event_t * e)
