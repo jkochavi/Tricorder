@@ -28,5 +28,6 @@ void OptionsPanelBig(lv_event_t * e)
 
 void wifiScan(lv_event_t * e)
 {
-	// Your code here
+	lv_label_set_text(ui_Label1, "SCANNING");
+	scanForNetworks();	
 }

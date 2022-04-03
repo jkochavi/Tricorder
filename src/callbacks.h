@@ -1,3 +1,3 @@
-#include "Arduino.h"
-
 void resizeWifiOptionsPanel(bool size);
+
+void scanForNetworks();
