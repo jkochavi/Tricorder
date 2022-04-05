@@ -1,5 +1,6 @@
 #include "lvgl.h"
 #include "GUI/ui.h"
+#include "wififuncs.h"
 
 void resizeWifiOptionsPanel(bool size)
 {
@@ -16,4 +17,5 @@ void resizeWifiOptionsPanel(bool size)
 void scanForNetworks()
 {
     _ui_flag_modify(ui_wifioptions, LV_OBJ_FLAG_HIDDEN, 2);
+    wifiscan();
 }
