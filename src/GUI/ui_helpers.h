@@ -1,10 +1,10 @@
 // SquareLine LVGL GENERATED FILE
 // EDITOR VERSION: SquareLine Studio 1.0.5
 // LVGL VERSION: 8.2
-// PROJECT: Tricorder2
+// PROJECT: Tricorder
 
-#ifndef _TRICORDER2_UI_HELPERS_H
-#define _TRICORDER2_UI_HELPERS_H
+#ifndef _TRICORDER_UI_HELPERS_H
+#define _TRICORDER_UI_HELPERS_H
 
 #if __has_include("lvgl.h")
     #include "lvgl.h"

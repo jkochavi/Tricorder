@@ -4,8 +4,11 @@
  * Opts: --bpp 8 --size 16 --font C:\Users\jdkoc\Desktop\Documents\assets\Antonio-VariableFont_wght.ttf -o C:\Users\jdkoc\Desktop\Documents\assets\ui_font_Regular_Text.c --format lvgl -r 0x20-0x7f --no-compress --no-prefilter
  ******************************************************************************/
 
+#ifdef LV_LVGL_H_INCLUDE_SIMPLE
 #include "lvgl.h"
-
+#else
+#include "lvgl/lvgl.h"
+#endif
 
 #ifndef UI_FONT_REGULAR_TEXT
 #define UI_FONT_REGULAR_TEXT 1
