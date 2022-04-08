@@ -13,7 +13,6 @@
 // #define TFT_DC    2  // Data Command control pin
 // #define TFT_RST   5  // Reset pin (could connect to RST pin)
 // #define TOUCH_CS 32     // Chip select pin (T_CS) of touch screen
-// Applying test change
 
 TFT_eSPI tft = TFT_eSPI(); 
 static const uint32_t screenWidth  = 320;
