@@ -18,7 +18,6 @@ extern "C" {
 
 extern lv_obj_t * ui_Home;
 extern lv_obj_t * ui_battery;
-extern lv_obj_t * ui_wifibutton;
 extern lv_obj_t * ui_btbutton;
 extern lv_obj_t * ui_filebutton;
 extern lv_obj_t * ui_chartbutton;
@@ -31,12 +30,6 @@ extern lv_obj_t * ui_b6;
 extern lv_obj_t * ui_Chart1;
 extern lv_obj_t * ui_console;
 extern lv_obj_t * ui_Button1;
-extern lv_obj_t * ui_wifisetup;
-extern lv_obj_t * ui_wifiback;
-extern lv_obj_t * ui_wifioptions;
-extern lv_obj_t * ui_Label1;
-extern lv_obj_t * ui_password;
-extern lv_obj_t * ui_wifikeyboard;
 
 void OptionsPanelSmall(lv_event_t * e);
 void wificonnect(lv_event_t * e);

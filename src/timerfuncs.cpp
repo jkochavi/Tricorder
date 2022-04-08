@@ -19,3 +19,4 @@ void batterytimer(lv_timer_t * timer)
     float battery_level = batterylevel();
     lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
 }
+

@@ -4,11 +4,22 @@
 #include "GUI/ui.h"
 #include "timerfuncs.h"
 
+// How to set up TFT_eSPI User_Setup.h:
+// ILI9341 driver
+// #define TFT_MISO 19
+// #define TFT_MOSI 23
+// #define TFT_SCLK 18
+// #define TFT_CS    4  // Chip select control pin
+// #define TFT_DC    2  // Data Command control pin
+// #define TFT_RST   5  // Reset pin (could connect to RST pin)
+// #define TOUCH_CS 32     // Chip select pin (T_CS) of touch screen
+
 TFT_eSPI tft = TFT_eSPI(); 
 static const uint32_t screenWidth  = 320;
 static const uint32_t screenHeight = 240;
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[ screenWidth * 10 ];
+static uint32_t console_msg = 10;
 
 void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
 {
