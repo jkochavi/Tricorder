@@ -6,10 +6,9 @@
 
 float batterylevel()
 {
-    float battery_level = analogRead(batteryPin); // Raw voltage reading
-    battery_level *= 2;                           // Account for voltage divider
-    battery_level /= 4096;                        // Ratio wrt max ADC counts
-    battery_level *= 100;                         // Convert to percentage
+    float battery_level = analogRead(batteryPin); // Raw ADC reading
+    battery_level *= 3.3/4096;                    // Convert to voltage
+    battery_level = 166.67*battery_level-250;     // Convert to percentage
     if (battery_level > 100) {battery_level=100;} // Saturate
     return battery_level;
 }
