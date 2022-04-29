@@ -9,3 +9,7 @@ void bluetoothconnect(lv_event_t * e)
 {
 	// Your code here
 }
+void clearconsoletext(lv_event_t * e)
+{
+	lv_textarea_set_text(ui_console, "");
+}

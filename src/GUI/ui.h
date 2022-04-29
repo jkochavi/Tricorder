@@ -29,13 +29,16 @@ extern lv_obj_t * ui_b5;
 extern lv_obj_t * ui_b6;
 extern lv_obj_t * ui_Chart1;
 extern lv_obj_t * ui_console;
+extern lv_obj_t * ui_clear;
 
+void clearconsoletext(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton5_png);    // assets\halfbutton5.png
 LV_IMG_DECLARE(ui_img_halfbutton2_png);    // assets\halfbutton2.png
 LV_IMG_DECLARE(ui_img_halfbutton3_png);    // assets\halfbutton3.png
 LV_IMG_DECLARE(ui_img_fullbutton1_png);    // assets\fullbutton1.png
+LV_IMG_DECLARE(ui_img_halfbutton4_png);    // assets\halfbutton4.png
 
 
 LV_FONT_DECLARE(ui_font_Regular_Text);

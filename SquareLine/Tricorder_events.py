@@ -18,3 +18,7 @@ def OptionsPanelSmall(event_struct):
 def OptionsPanelBig(event_struct):
     return
 
+
+def clearconsoletext(event_struct):
+    return
+

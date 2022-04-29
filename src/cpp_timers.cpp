@@ -17,5 +17,14 @@ void batterytimer(lv_timer_t * timer)
 {
     float battery_level = batterylevel();
     lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
+    lv_textarea_add_text(ui_console, "BATT CHECK\n");
 }
 
+void console_timer(lv_timer_t * timer)
+{
+    const char * text = lv_textarea_get_text(ui_console);
+    if (sizeof(text) ==  lv_textarea_get_max_length(ui_console))
+    {
+        lv_textarea_set_text(ui_console, "CLEAR CSL\n");
+    }
+}
