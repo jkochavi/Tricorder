@@ -8,8 +8,8 @@ float batterylevel()
 {
     float battery_level = analogRead(batteryPin);         // Raw ADC reading
     lv_textarea_add_text(ui_console, 
-        ((String)battery_level).c_str());
-    lv_textarea_add_text(ui_console,"\n");
+        ((String)battery_level).c_str());                 // Print ADC reading
+    lv_textarea_add_text(ui_console,"\n");                // Add new line
     battery_level *= 3.3/4096;                            // Convert to voltage
     battery_level = 166.67*battery_level-250;             // Convert to percentage
     if (battery_level > 100) {battery_level=100;}         // Saturate
