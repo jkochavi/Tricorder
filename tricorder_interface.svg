@@ -7,7 +7,7 @@
    id="svg8"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="tricorder_interface.svg"
-   inkscape:export-filename="C:\Users\jdkoc\OneDrive\Documents\PlatformIO\Projects\Tricorder\SquareLine\assets\home.png"
+   inkscape:export-filename="C:\Users\jdkoc\OneDrive\Documents\PlatformIO\Projects\Tricorder\SquareLine\assets\bluetooth.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -50,10 +50,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.0000001"
-     inkscape:cx="119.75"
-     inkscape:cy="163.75"
+     inkscape:cx="113.4301"
+     inkscape:cy="100.04616"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="g9763"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -62,7 +62,7 @@
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     showguides="false"
+     showguides="true"
      inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata5">
@@ -139,7 +139,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Buttons"
-     style="display:inline;mix-blend-mode:normal"
+     style="display:none;mix-blend-mode:normal"
      sodipodi:insensitive="true">
     <path
        id="rect853-1"
@@ -357,7 +357,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Text"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
@@ -420,7 +420,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="Other Widgets"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke-width:0.667884;stroke-miterlimit:4;stroke-dasharray:none"
@@ -449,5 +449,192 @@
          id="tspan1782"
          x="9.5399389"
          y="8.4665556">INIT BATT</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Block Sidebar"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.299205"
+       id="rect9165"
+       width="42.10479"
+       height="54.469543"
+       x="42.562275"
+       y="4.7703629" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="LCARS"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="9.5399933"
+       y="8.4665804"
+       id="text890-9"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1782-4"
+         x="9.5399933"
+         y="8.4665804">LCARS ACCESS TERMINAL                      BACK</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="LCARS Buttons"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <path
+       id="rect853-9-6-0-8-5-9-4"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.295661"
+       d="m 77.522914,5.2916622 v 4.233334 h 3.968751 a 2.1166666,2.1166666 0 0 0 2.116667,-2.116667 2.1166666,2.1166666 0 0 0 -2.116667,-2.116667 z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\round4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.479401"
+       id="rect860-3-1-3-6-6-0-8-5-9"
+       width="4.2333331"
+       height="4.2333331"
+       x="-76.993752"
+       y="5.291666"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\square1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g9763"
+     inkscape:label="Bluetooth"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="9.5399933"
+       y="8.4665804"
+       id="text9761"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan9759"
+         x="9.5399933"
+         y="8.4665804">BLUETOOTH SETUP                               BACK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
+       x="8.5989571"
+       y="15.742707"
+       id="text25015"><tspan
+         sodipodi:role="line"
+         id="tspan25013"
+         style="stroke-width:0.264583"
+         x="8.5989571"
+         y="15.742707" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
+       x="16.139582"
+       y="26.590622"
+       id="text25847"><tspan
+         sodipodi:role="line"
+         id="tspan25845"
+         style="stroke-width:0.264583"
+         x="16.139582"
+         y="26.590622" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
+       x="8.2164125"
+       y="16.050182"
+       id="text27507"><tspan
+         sodipodi:role="line"
+         id="tspan27505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
+         x="8.2164125"
+         y="16.050182">STATUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;display:inline;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
+       x="49.982479"
+       y="16.050182"
+       id="text27507-4"><tspan
+         sodipodi:role="line"
+         id="tspan27505-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
+         x="49.982479"
+         y="16.050182">CONNECT</tspan></text>
+    <path
+       id="path47780"
+       style="display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:4.28546"
+       d="m 43.994141,200 a 7.9999996,7.9999996 0 0 0 -7.902344,6.79492 7.9999996,7.9999996 0 0 0 6.681641,9.11133 l 0.08398,0.0117 A 7.9999996,7.9999996 0 0 0 44,215.99805 V 216 h 262 v -0.002 a 7.9999996,7.9999996 0 0 0 7.91406,-6.83399 7.9999996,7.9999996 0 0 0 -6.72851,-9.07617 A 7.9999996,7.9999996 0 0 0 306,200 H 305.994 44 a 7.9999996,7.9999996 0 0 0 -0.0059,0 z"
+       transform="scale(0.26458333)" />
+    <path
+       id="path47780-7"
+       style="display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:1.13386"
+       d="M 11.640017,17.991667 A 2.1166665,2.1166665 0 0 0 9.5491885,19.78949 2.1166665,2.1166665 0 0 0 11.31704,22.200196 l 0.02222,0.0031 a 2.1166665,2.1166665 0 0 0 0.302309,0.02119 v 5.15e-4 H 80.9624 v -5.3e-4 a 2.1166665,2.1166665 0 0 0 2.093928,-1.80816 2.1166665,2.1166665 0 0 0 -1.780251,-2.401403 2.1166665,2.1166665 0 0 0 -0.313677,-0.02324 H 80.9608 11.641556 a 2.1166665,2.1166665 0 0 0 -0.0016,0 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
+       x="47.785999"
+       y="15.921377"
+       id="text52891"><tspan
+         sodipodi:role="line"
+         id="tspan52889"
+         style="stroke-width:0.264583"
+         x="47.785999"
+         y="15.921377" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g9757"
+     inkscape:label="Bluetooth Buttons"
+     style="display:none">
+    <path
+       id="path9753"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.295661"
+       d="m 76.993746,5.2916622 v 4.233334 h 3.968751 a 2.1166666,2.1166666 0 0 0 2.116667,-2.116667 2.1166666,2.1166666 0 0 0 -2.116667,-2.116667 z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\round4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.479401"
+       id="rect9755"
+       width="4.2333331"
+       height="4.2333331"
+       x="-76.464584"
+       y="5.291666"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\square1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect853-9-6-0-8-5-65"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
+       d="m 76.993751,11.90625 v 4.233333 h 3.96875 a 2.1166666,2.1166666 0 0 0 2.116667,-2.116666 2.1166666,2.1166666 0 0 0 -2.116667,-2.116667 z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect853-1-9-2-1-8-1-1"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
+       d="m 71.702084,11.90625 v 4.233333 h -3.96875 a 2.1166666,2.1166666 0 0 1 -2.116667,-2.116666 2.1166666,2.1166666 0 0 1 2.116667,-2.116667 z"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png" />
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
+       id="rect860-3-1-3-6-6-0-8-76"
+       width="4.2333331"
+       height="4.2333331"
+       x="-76.464584"
+       y="11.90625"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>

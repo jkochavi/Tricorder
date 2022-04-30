@@ -30,8 +30,15 @@ extern lv_obj_t * ui_b6;
 extern lv_obj_t * ui_Chart1;
 extern lv_obj_t * ui_console;
 extern lv_obj_t * ui_clear;
+extern lv_obj_t * ui_LCARS;
+extern lv_obj_t * ui_back1;
+extern lv_obj_t * ui_Bluetooth;
+extern lv_obj_t * ui_bluetoothroller;
+extern lv_obj_t * ui_back2;
+extern lv_obj_t * ui_bluetoothconnect;
 
 void clearconsoletext(lv_event_t * e);
+void btconnect(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton5_png);    // assets\halfbutton5.png
@@ -39,6 +46,8 @@ LV_IMG_DECLARE(ui_img_halfbutton2_png);    // assets\halfbutton2.png
 LV_IMG_DECLARE(ui_img_halfbutton3_png);    // assets\halfbutton3.png
 LV_IMG_DECLARE(ui_img_fullbutton1_png);    // assets\fullbutton1.png
 LV_IMG_DECLARE(ui_img_halfbutton4_png);    // assets\halfbutton4.png
+LV_IMG_DECLARE(ui_img_lcars_png);    // assets\LCARS.png
+LV_IMG_DECLARE(ui_img_bluetoothscreen_png);    // assets\bluetoothscreen.png
 
 
 LV_FONT_DECLARE(ui_font_Regular_Text);

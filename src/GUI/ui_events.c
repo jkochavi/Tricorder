@@ -13,3 +13,8 @@ void clearconsoletext(lv_event_t * e)
 {
 	lv_textarea_set_text(ui_console, "");
 }
+
+void btconnect(lv_event_t * e)
+{
+	// Your code here
+}

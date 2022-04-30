@@ -22,3 +22,7 @@ def OptionsPanelBig(event_struct):
 def clearconsoletext(event_struct):
     return
 
+
+def btconnect(event_struct):
+    return
+
