@@ -3,6 +3,8 @@
 #include "lvgl.h"
 #include "GUI/ui.h"
 #include "cpp_timers.h"
+#include "BleKeyboard.h"
+#include "cpp_events.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
@@ -19,6 +21,7 @@ static const uint32_t screenWidth  = 320;
 static const uint32_t screenHeight = 240;
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[ screenWidth * 10 ];
+
 
 void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
 {
@@ -65,12 +68,17 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
+   delay(1000);
+   init_keyboard();
+   lv_label_set_text(ui_btstatus,"BLUETOOTH ON");
+   delay(2000);
    lv_timer_create(console_timer, 5000, NULL);
    lv_timer_create(batterytimer, 30000, NULL);
    ui_init();
    float battery_level = batterylevel();
    lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
-   lv_textarea_set_text(ui_console, "INIT SUCCESS\n");
+   lv_textarea_set_text(ui_console, "STARTING BT...\n");
+   lv_textarea_add_text(ui_console, "INIT SUCCESS\n");
 }
 
 void loop()

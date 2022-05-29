@@ -26,3 +26,7 @@ def clearconsoletext(event_struct):
 def btconnect(event_struct):
     return
 
+
+def keypress(event_struct):
+    return
+

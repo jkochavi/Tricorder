@@ -33,12 +33,15 @@ extern lv_obj_t * ui_clear;
 extern lv_obj_t * ui_LCARS;
 extern lv_obj_t * ui_back1;
 extern lv_obj_t * ui_Bluetooth;
-extern lv_obj_t * ui_bluetoothroller;
 extern lv_obj_t * ui_back2;
-extern lv_obj_t * ui_bluetoothconnect;
+extern lv_obj_t * ui_keyboard;
+extern lv_obj_t * ui_mouse;
+extern lv_obj_t * ui_Keyboard1;
+extern lv_obj_t * ui_character;
+extern lv_obj_t * ui_btstatus;
 
 void clearconsoletext(lv_event_t * e);
-void btconnect(lv_event_t * e);
+void keypress(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton5_png);    // assets\halfbutton5.png

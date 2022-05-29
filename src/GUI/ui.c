@@ -24,9 +24,12 @@ lv_obj_t * ui_clear;
 lv_obj_t * ui_LCARS;
 lv_obj_t * ui_back1;
 lv_obj_t * ui_Bluetooth;
-lv_obj_t * ui_bluetoothroller;
 lv_obj_t * ui_back2;
-lv_obj_t * ui_bluetoothconnect;
+lv_obj_t * ui_keyboard;
+lv_obj_t * ui_mouse;
+lv_obj_t * ui_Keyboard1;
+lv_obj_t * ui_character;
+lv_obj_t * ui_btstatus;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -79,12 +82,20 @@ static void ui_event_back2(lv_event_t * e)
         _ui_screen_change(ui_Home, LV_SCR_LOAD_ANIM_FADE_ON, 10, 0);
     }
 }
-static void ui_event_bluetoothconnect(lv_event_t * e)
+static void ui_event_keyboard(lv_event_t * e)
 {
     lv_event_code_t event = lv_event_get_code(e);
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
-        btconnect(e);
+        _ui_flag_modify(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+    }
+}
+static void ui_event_Keyboard1(lv_event_t * e)
+{
+    lv_event_code_t event = lv_event_get_code(e);
+    lv_obj_t * ta = lv_event_get_target(e);
+    if(event == LV_EVENT_VALUE_CHANGED) {
+        keypress(e);
     }
 }
 
@@ -387,33 +398,6 @@ void ui_Bluetooth_screen_init(void)
 
     lv_obj_set_style_bg_img_src(ui_Bluetooth, &ui_img_bluetoothscreen_png, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_bluetoothroller
-
-    ui_bluetoothroller = lv_roller_create(ui_Bluetooth);
-    lv_roller_set_options(ui_bluetoothroller, "Option 1\nOption 2\nOption 3", LV_ROLLER_MODE_NORMAL);
-
-    lv_obj_set_width(ui_bluetoothroller, 278);
-    lv_obj_set_height(ui_bluetoothroller, 110);
-
-    lv_obj_set_x(ui_bluetoothroller, 36);
-    lv_obj_set_y(ui_bluetoothroller, 87);
-
-    lv_obj_set_style_text_color(ui_bluetoothroller, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_bluetoothroller, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_bluetoothroller, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui_bluetoothroller, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_bluetoothroller, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_bluetoothroller, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_color(ui_bluetoothroller, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_opa(ui_bluetoothroller, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_set_style_text_color(ui_bluetoothroller, lv_color_hex(0x000000), LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_bluetoothroller, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_bluetoothroller, &ui_font_Regular_Text, LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_radius(ui_bluetoothroller, 20, LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_bluetoothroller, lv_color_hex(0x626DCD), LV_PART_SELECTED | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_bluetoothroller, 255, LV_PART_SELECTED | LV_STATE_DEFAULT);
-
     // ui_back2
 
     ui_back2 = lv_img_create(ui_Bluetooth);
@@ -432,23 +416,99 @@ void ui_Bluetooth_screen_init(void)
     lv_obj_set_style_img_recolor(ui_back2, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_back2, 150, LV_PART_MAIN | LV_STATE_PRESSED);
 
-    // ui_bluetoothconnect
+    // ui_keyboard
 
-    ui_bluetoothconnect = lv_img_create(ui_Bluetooth);
-    lv_img_set_src(ui_bluetoothconnect, &ui_img_fullbutton1_png);
+    ui_keyboard = lv_img_create(ui_Bluetooth);
+    lv_img_set_src(ui_keyboard, &ui_img_fullbutton1_png);
 
-    lv_obj_set_width(ui_bluetoothconnect, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_bluetoothconnect, LV_SIZE_CONTENT);
+    lv_obj_set_width(ui_keyboard, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_keyboard, LV_SIZE_CONTENT);
 
-    lv_obj_set_x(ui_bluetoothconnect, 248);
-    lv_obj_set_y(ui_bluetoothconnect, 45);
+    lv_obj_set_x(ui_keyboard, 36);
+    lv_obj_set_y(ui_keyboard, 90);
 
-    lv_obj_add_flag(ui_bluetoothconnect, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_bluetoothconnect, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_add_flag(ui_keyboard, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);
+    lv_obj_clear_flag(ui_keyboard, LV_OBJ_FLAG_SCROLLABLE);
 
-    lv_obj_add_event_cb(ui_bluetoothconnect, ui_event_bluetoothconnect, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_img_recolor(ui_bluetoothconnect, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_bluetoothconnect, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_add_event_cb(ui_keyboard, ui_event_keyboard, LV_EVENT_ALL, NULL);
+    lv_obj_set_style_img_recolor(ui_keyboard, lv_color_hex(0x320032), LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_keyboard, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+
+    // ui_mouse
+
+    ui_mouse = lv_img_create(ui_Bluetooth);
+    lv_img_set_src(ui_mouse, &ui_img_fullbutton1_png);
+
+    lv_obj_set_width(ui_mouse, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_mouse, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_mouse, 198);
+    lv_obj_set_y(ui_mouse, 90);
+
+    lv_obj_add_flag(ui_mouse, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);
+    lv_obj_clear_flag(ui_mouse, LV_OBJ_FLAG_SCROLLABLE);
+
+    lv_obj_set_style_img_recolor(ui_mouse, lv_color_hex(0x320032), LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_mouse, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+
+    // ui_Keyboard1
+
+    ui_Keyboard1 = lv_keyboard_create(ui_Bluetooth);
+
+    lv_obj_set_width(ui_Keyboard1, 320);
+    lv_obj_set_height(ui_Keyboard1, 130);
+
+    lv_obj_set_x(ui_Keyboard1, 0);
+    lv_obj_set_y(ui_Keyboard1, 55);
+
+    lv_obj_set_align(ui_Keyboard1, LV_ALIGN_CENTER);
+
+    lv_obj_add_flag(ui_Keyboard1, LV_OBJ_FLAG_HIDDEN);
+
+    lv_obj_add_event_cb(ui_Keyboard1, ui_event_Keyboard1, LV_EVENT_ALL, NULL);
+    lv_obj_set_style_bg_color(ui_Keyboard1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_Keyboard1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // ui_character
+
+    ui_character = lv_textarea_create(ui_Bluetooth);
+
+    lv_obj_set_width(ui_character, 150);
+    lv_obj_set_height(ui_character, 70);
+
+    lv_obj_set_x(ui_character, 12);
+    lv_obj_set_y(ui_character, 33);
+
+    lv_obj_set_align(ui_character, LV_ALIGN_CENTER);
+
+    if("" == "") lv_textarea_set_accepted_chars(ui_character, NULL);
+    else lv_textarea_set_accepted_chars(ui_character, "");
+
+    lv_textarea_set_max_length(ui_character, 5);
+    lv_textarea_set_text(ui_character, "");
+    lv_textarea_set_placeholder_text(ui_character, "Placeholder...");
+    lv_textarea_set_one_line(ui_character, true);
+
+    lv_obj_add_flag(ui_character, LV_OBJ_FLAG_HIDDEN);
+
+    // ui_btstatus
+
+    ui_btstatus = lv_label_create(ui_Bluetooth);
+
+    lv_obj_set_width(ui_btstatus, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_btstatus, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_btstatus, 78);
+    lv_obj_set_y(ui_btstatus, 43);
+
+    lv_label_set_text(ui_btstatus, "BLUETOOTH OFF");
+
+    lv_obj_set_style_text_color(ui_btstatus, lv_color_hex(0x6ACEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_btstatus, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_btstatus, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // POST CALLS
+    lv_keyboard_set_textarea(ui_Keyboard1, ui_character);
 
 }
 
