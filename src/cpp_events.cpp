@@ -12,14 +12,32 @@ void init_keyboard()
 
 extern "C" {
 
-void sendpress(const char * character)
+void sendpress(const char * txt, const char * txt2)
 {
-    uint32_t i = 0;
-    while(character[i] != '\0') {
-        keyboard.write(character[i]);
-        i++;
+    // if what is entered into the text edit field matches
+    // what was typed on the keypad...
+    if (strcmp(txt,txt2)==0){
+        uint32_t i = 0;
+        while(txt[i] != '\0') {
+            keyboard.write(txt[i]);
+            i++;
+        }
+    }
+    // if they don't match, then it means a special key 
+    // was pressed, like lowerase,uppercase,backspace,speical chars, etc...
+    else {
+        if (strcmp(txt, BACKSPACE) == 0){
+            keyboard.write('\b');
+        }
+        else if (strcmp(txt, ENTER) == 0){
+            keyboard.write('\n');
+        }
+        else if (strcmp(txt, LEFTARROW) == 0){
+            keyboard.write(0xD8);
+        }
+        else if (strcmp(txt, RIGHTARROW) == 0){
+            keyboard.write(0xD7);
+        }
     }
 }
-
-
 }
