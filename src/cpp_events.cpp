@@ -1,6 +1,7 @@
 #include "cpp_events.h"
 #include "BleKeyboard.h"
 
+
 BleKeyboard keyboard("Tricorder");
 
 void init_keyboard()
@@ -11,9 +12,13 @@ void init_keyboard()
 
 extern "C" {
 
-void sendpress(unsigned char character)
+void sendpress(const char * character)
 {
-    keyboard.write(character);
+    uint32_t i = 0;
+    while(character[i] != '\0') {
+        keyboard.write(character[i]);
+        i++;
+    }
 }
 
 

@@ -474,17 +474,17 @@ void ui_Bluetooth_screen_init(void)
     ui_character = lv_textarea_create(ui_Bluetooth);
 
     lv_obj_set_width(ui_character, 150);
-    lv_obj_set_height(ui_character, 70);
+    lv_obj_set_height(ui_character, 23);
 
-    lv_obj_set_x(ui_character, 12);
-    lv_obj_set_y(ui_character, 33);
+    lv_obj_set_x(ui_character, 81);
+    lv_obj_set_y(ui_character, -67);
 
     lv_obj_set_align(ui_character, LV_ALIGN_CENTER);
 
     if("" == "") lv_textarea_set_accepted_chars(ui_character, NULL);
     else lv_textarea_set_accepted_chars(ui_character, "");
 
-    lv_textarea_set_max_length(ui_character, 5);
+    lv_textarea_set_max_length(ui_character, 1);
     lv_textarea_set_text(ui_character, "");
     lv_textarea_set_placeholder_text(ui_character, "Placeholder...");
     lv_textarea_set_one_line(ui_character, true);

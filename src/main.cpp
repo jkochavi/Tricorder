@@ -68,17 +68,17 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
+   lv_timer_create(console_timer, 5000, NULL);
+   lv_timer_create(batterytimer, 30000, NULL);
+   ui_init();
    delay(1000);
    init_keyboard();
    lv_label_set_text(ui_btstatus,"BLUETOOTH ON");
    delay(2000);
-   lv_timer_create(console_timer, 5000, NULL);
-   lv_timer_create(batterytimer, 30000, NULL);
-   ui_init();
    float battery_level = batterylevel();
    lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
-   lv_textarea_set_text(ui_console, "STARTING BT...\n");
-   lv_textarea_add_text(ui_console, "INIT SUCCESS\n");
+   lv_textarea_set_text(ui_console, "INIT SUCCESS\n");
+   lv_keyboard_set_textarea(ui_Keyboard1,ui_character);
 }
 
 void loop()

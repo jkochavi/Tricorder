@@ -8,7 +8,7 @@ extern "C"
 #endif
 
 
-void sendpress(unsigned char character);
+void sendpress(const char * character);
 
 
 #ifdef __cplusplus
