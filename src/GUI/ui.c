@@ -225,7 +225,7 @@ void ui_Home_screen_init(void)
     lv_obj_set_y(ui_logswitch, 106);
 
     lv_obj_set_style_radius(ui_logswitch, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0x626DCD), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0x101648), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_logswitch, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0xFFEE8B), LV_PART_KNOB | LV_STATE_DEFAULT);
