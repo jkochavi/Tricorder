@@ -30,3 +30,11 @@ def btconnect(event_struct):
 def keypress(event_struct):
     return
 
+
+def initbt(event_struct):
+    return
+
+
+def checkinitbt(event_struct):
+    return
+

@@ -29,6 +29,7 @@ extern lv_obj_t * ui_keyboard;
 extern lv_obj_t * ui_LCARS;
 extern lv_obj_t * ui_back1;
 
+void checkinitbt(lv_event_t * e);
 void clearconsoletext(lv_event_t * e);
 void keypress(lv_event_t * e);
 

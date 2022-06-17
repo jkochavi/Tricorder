@@ -38,6 +38,7 @@ static void ui_event_keyboardbutton(lv_event_t * e)
     if(event == LV_EVENT_CLICKED) {
         _ui_flag_modify(ui_keyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         _ui_flag_modify(ui_character, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        checkinitbt(e);
     }
 }
 static void ui_event_filebutton(lv_event_t * e)
