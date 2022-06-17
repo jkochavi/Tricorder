@@ -14,7 +14,7 @@ void clearconsoletext(lv_event_t * e)
 
 void keypress(lv_event_t * e)
 {	
-	const char * txt = lv_btnmatrix_get_btn_text(ui_Keyboard1, lv_btnmatrix_get_selected_btn(ui_Keyboard1));
+	const char * txt = lv_btnmatrix_get_btn_text(ui_keyboard, lv_btnmatrix_get_selected_btn(ui_keyboard));
 	const char * txt2 = lv_textarea_get_text(ui_character);
 	sendpress(txt, txt2);
 	lv_textarea_set_text(ui_character,"");
