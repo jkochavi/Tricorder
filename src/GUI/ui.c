@@ -37,7 +37,6 @@ static void ui_event_keyboardbutton(lv_event_t * e)
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
         _ui_flag_modify(ui_keyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-        _ui_flag_modify(ui_character, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         checkinitbt(e);
     }
 }
@@ -66,7 +65,6 @@ static void ui_event_keyboard(lv_event_t * e)
     }
     if(event == LV_EVENT_CANCEL) {
         _ui_flag_modify(ui_keyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-        _ui_flag_modify(ui_character, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
     }
 }
 static void ui_event_back1(lv_event_t * e)
@@ -272,10 +270,10 @@ void ui_Home_screen_init(void)
     ui_keyboard = lv_keyboard_create(ui_Home);
 
     lv_obj_set_width(ui_keyboard, 320);
-    lv_obj_set_height(ui_keyboard, 200);
+    lv_obj_set_height(ui_keyboard, 240);
 
     lv_obj_set_x(ui_keyboard, 0);
-    lv_obj_set_y(ui_keyboard, 20);
+    lv_obj_set_y(ui_keyboard, 0);
 
     lv_obj_set_align(ui_keyboard, LV_ALIGN_CENTER);
 
