@@ -5,6 +5,7 @@
 #include "cpp_timers.h"
 #include "BleKeyboard.h"
 #include "cpp_events.h"
+#include "SD_functions.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
@@ -16,12 +17,17 @@
 // #define TFT_RST   5  // Reset pin (could connect to RST pin)
 // #define TOUCH_CS 32     // Chip select pin (T_CS) of touch screen
 
+// Hardware pins for the SD card
+// SCK is pin 18
+// MISO is pin 19
+// MOSI is pin 23
+// CS is pin 15
+
 TFT_eSPI tft = TFT_eSPI(); 
 static const uint32_t screenWidth  = 320;
 static const uint32_t screenHeight = 240;
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[ screenWidth * 10 ];
-
 
 void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p)
 {

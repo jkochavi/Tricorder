@@ -15,9 +15,6 @@ lv_obj_t * ui_chartbutton;
 lv_obj_t * ui_b1;
 lv_obj_t * ui_b2;
 lv_obj_t * ui_b3;
-lv_obj_t * ui_b4;
-lv_obj_t * ui_b5;
-lv_obj_t * ui_b6;
 lv_obj_t * ui_Chart1;
 lv_obj_t * ui_console;
 lv_obj_t * ui_clear;
@@ -26,7 +23,6 @@ lv_obj_t * ui_back1;
 lv_obj_t * ui_Bluetooth;
 lv_obj_t * ui_back2;
 lv_obj_t * ui_keyboard;
-lv_obj_t * ui_mouse;
 lv_obj_t * ui_Keyboard1;
 lv_obj_t * ui_character;
 lv_obj_t * ui_btstatus;
@@ -231,57 +227,6 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_img_recolor(ui_b3, lv_color_hex(0x003200), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_b3, 150, LV_PART_MAIN | LV_STATE_PRESSED);
 
-    // ui_b4
-
-    ui_b4 = lv_img_create(ui_Home);
-    lv_img_set_src(ui_b4, &ui_img_fullbutton1_png);
-
-    lv_obj_set_width(ui_b4, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_b4, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_b4, 106);
-    lv_obj_set_y(ui_b4, 164);
-
-    lv_obj_add_flag(ui_b4, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_b4, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_img_recolor(ui_b4, lv_color_hex(0x003200), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_b4, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_b5
-
-    ui_b5 = lv_img_create(ui_Home);
-    lv_img_set_src(ui_b5, &ui_img_fullbutton1_png);
-
-    lv_obj_set_width(ui_b5, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_b5, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_b5, 106);
-    lv_obj_set_y(ui_b5, 184);
-
-    lv_obj_add_flag(ui_b5, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_b5, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_img_recolor(ui_b5, lv_color_hex(0x003200), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_b5, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_b6
-
-    ui_b6 = lv_img_create(ui_Home);
-    lv_img_set_src(ui_b6, &ui_img_fullbutton1_png);
-
-    lv_obj_set_width(ui_b6, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_b6, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_b6, 106);
-    lv_obj_set_y(ui_b6, 204);
-
-    lv_obj_add_flag(ui_b6, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_b6, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_img_recolor(ui_b6, lv_color_hex(0x003200), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_b6, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
     // ui_Chart1
 
     ui_Chart1 = lv_chart_create(ui_Home);
@@ -433,23 +378,6 @@ void ui_Bluetooth_screen_init(void)
     lv_obj_add_event_cb(ui_keyboard, ui_event_keyboard, LV_EVENT_ALL, NULL);
     lv_obj_set_style_img_recolor(ui_keyboard, lv_color_hex(0x320032), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_keyboard, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_mouse
-
-    ui_mouse = lv_img_create(ui_Bluetooth);
-    lv_img_set_src(ui_mouse, &ui_img_fullbutton1_png);
-
-    lv_obj_set_width(ui_mouse, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_mouse, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_mouse, 198);
-    lv_obj_set_y(ui_mouse, 90);
-
-    lv_obj_add_flag(ui_mouse, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_ADV_HITTEST);
-    lv_obj_clear_flag(ui_mouse, LV_OBJ_FLAG_SCROLLABLE);
-
-    lv_obj_set_style_img_recolor(ui_mouse, lv_color_hex(0x320032), LV_PART_MAIN | LV_STATE_PRESSED);
-    lv_obj_set_style_img_recolor_opa(ui_mouse, 150, LV_PART_MAIN | LV_STATE_PRESSED);
 
     // ui_Keyboard1
 

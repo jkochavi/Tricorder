@@ -16,10 +16,7 @@ extern "C"
 {
 #endif
 
-
-
 void sendpress(const char * txt, const char * txt2);
-
 
 #ifdef __cplusplus
 }
