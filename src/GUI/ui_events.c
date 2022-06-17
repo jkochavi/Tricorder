@@ -19,3 +19,13 @@ void keypress(lv_event_t * e)
 	sendpress(txt, txt2);
 	lv_textarea_set_text(ui_character,"");
 }
+
+void initbt(lv_event_t * e)
+{
+	// Your code here
+}
+
+void checkinitbt(lv_event_t * e)
+{
+	// Your code here
+}
