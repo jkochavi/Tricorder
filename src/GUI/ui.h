@@ -34,7 +34,6 @@ extern lv_obj_t * ui_SDcontents;
 extern lv_obj_t * ui_cmdtextarea;
 extern lv_obj_t * ui_cmdkeyboard;
 
-void checkinitbt(lv_event_t * e);
 void clearconsoletext(lv_event_t * e);
 void keypress(lv_event_t * e);
 void execute(lv_event_t * e);
