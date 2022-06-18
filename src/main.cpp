@@ -3,9 +3,9 @@
 #include "lvgl.h"
 #include "GUI/ui.h"
 #include "cpp_timers.h"
-#include "BleKeyboard.h"
 #include "cpp_events.h"
-#include "SD_functions.h"
+#include "BleKeyboard.h"
+//#include "SD_functions.h"
 #include "Wire.h"
 #include "sensorpack1.h"
 
@@ -81,15 +81,15 @@ void setup()
    indev_drv.read_cb = my_touchpad_read;
    lv_indev_drv_register( &indev_drv );
    //----------Custom code begins here------------//
-   lv_timer_create(console_timer, 5000, NULL);
-   lv_timer_create(batterytimer, 30000, NULL);
+   //lv_timer_create(console_timer, 5000, NULL);
+   //lv_timer_create(batterytimer, 30000, NULL);
    //lv_timer_create(read_sensors, 100, NULL);
    //lv_timer_create(update_plot, 1000, NULL);
    ui_init();
-   init_sensorpackgui();
-   float battery_level = batterylevel();
-   lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
-   lv_textarea_set_text(ui_console, "INIT SUCCESS\n");
+   //init_sensorpackgui();
+   //float battery_level = batterylevel();
+   //lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
+   //lv_textarea_set_text(ui_console, "INIT SUCCESS\n");
 }
 
 void loop()
