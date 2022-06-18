@@ -30,3 +30,7 @@ void console_timer(lv_timer_t * timer)
         lv_textarea_set_text(ui_console, "CLEAR CSL\n");
     }
 }
+
+void i2c_timer(lv_timer_t * timer){
+    
+}

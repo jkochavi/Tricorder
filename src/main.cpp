@@ -6,6 +6,8 @@
 #include "BleKeyboard.h"
 #include "cpp_events.h"
 #include "SD_functions.h"
+#include "Wire.h"
+#include "sensorpack1.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
@@ -77,13 +79,11 @@ void setup()
    lv_timer_create(console_timer, 5000, NULL);
    lv_timer_create(batterytimer, 30000, NULL);
    ui_init();
-   //delay(1000);
-   //init_keyboard();
-   //delay(2000);
+   init_sensorpackgui();
+   Wire.begin();
    float battery_level = batterylevel();
    lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
    lv_textarea_set_text(ui_console, "INIT SUCCESS\n");
-   lv_keyboard_set_textarea(ui_keyboard,ui_character);
 }
 
 void loop()
