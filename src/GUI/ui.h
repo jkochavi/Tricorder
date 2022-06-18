@@ -26,6 +26,7 @@ extern lv_obj_t * ui_clear;
 extern lv_obj_t * ui_logswitch;
 extern lv_obj_t * ui_character;
 extern lv_obj_t * ui_keyboard;
+extern lv_obj_t * ui_signalchoice;
 extern lv_obj_t * ui_LCARS;
 extern lv_obj_t * ui_back1;
 extern lv_obj_t * ui_cmdbutton;

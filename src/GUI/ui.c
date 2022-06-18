@@ -17,6 +17,7 @@ lv_obj_t * ui_clear;
 lv_obj_t * ui_logswitch;
 lv_obj_t * ui_character;
 lv_obj_t * ui_keyboard;
+lv_obj_t * ui_signalchoice;
 lv_obj_t * ui_LCARS;
 lv_obj_t * ui_back1;
 lv_obj_t * ui_cmdbutton;
@@ -307,6 +308,22 @@ void ui_Home_screen_init(void)
     lv_obj_add_event_cb(ui_keyboard, ui_event_keyboard, LV_EVENT_ALL, NULL);
     lv_obj_set_style_bg_color(ui_keyboard, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_keyboard, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // ui_signalchoice
+
+    ui_signalchoice = lv_label_create(ui_Home);
+
+    lv_obj_set_width(ui_signalchoice, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_signalchoice, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_signalchoice, 240);
+    lv_obj_set_y(ui_signalchoice, 30);
+
+    lv_label_set_text(ui_signalchoice, "1");
+
+    lv_obj_set_style_text_color(ui_signalchoice, lv_color_hex(0x6ACEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_signalchoice, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_signalchoice, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // POST CALLS
     lv_keyboard_set_textarea(ui_keyboard, ui_character);
