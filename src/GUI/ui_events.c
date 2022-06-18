@@ -24,3 +24,8 @@ void execute(lv_event_t * e)
 {
 	const char * cmd = lv_texarea_get_text(ui_cmdtextarea);
 }
+
+void checkinitbt(lv_event_t * e)
+{
+	// Your code here
+}

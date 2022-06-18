@@ -29,9 +29,9 @@ extern lv_obj_t * ui_keyboard;
 extern lv_obj_t * ui_LCARS;
 extern lv_obj_t * ui_back1;
 extern lv_obj_t * ui_cmdbutton;
+extern lv_obj_t * ui_SDcontents;
 extern lv_obj_t * ui_cmdtextarea;
 extern lv_obj_t * ui_cmdkeyboard;
-extern lv_obj_t * ui_TextArea2;
 
 void checkinitbt(lv_event_t * e);
 void clearconsoletext(lv_event_t * e);

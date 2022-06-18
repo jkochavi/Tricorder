@@ -15,7 +15,7 @@
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="tricorder_interface.svg"
-   inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\LCARS.png"
+   inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\home.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -53,7 +53,7 @@
      inkscape:cx="189.74999"
      inkscape:cy="120.74999"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer8"
+     inkscape:current-layer="layer10"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -316,43 +316,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="Home"
-     style="display:none"
-     sodipodi:insensitive="true">
-    <path
-       id="rect853-1"
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,22.489583 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,24.60625 2.1166666,2.1166666 0 0 1 10.583333,22.489583 Z"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       id="rect853-1-96"
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,16.933333 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.05 2.1166666,2.1166666 0 0 1 10.583333,16.933333 Z"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <rect
-       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
-       id="rect860-3"
-       width="4.2333331"
-       height="4.2333331"
-       x="-19.314581"
-       y="22.489584"
-       transform="scale(-1,1)"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <rect
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.479401"
-       id="rect860-9-4-2-25"
-       width="4.2333331"
-       height="4.2333331"
-       x="15.08125"
-       y="16.933332"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton4.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -398,15 +362,68 @@
          id="tspan888-1-5-4"
          x="59.616978"
          y="34.451126"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">CONSOLE</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">CONSOLE CLR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="59.616978"
+       y="10.980143"
+       id="text890-2-8-8-3"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan888-1-5-4-0"
+         x="59.616978"
+         y="10.980143"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">SIGNAL </tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Home Widgets"
+     style="display:none">
+    <path
+       id="rect853-1"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
+       d="m 14.552083,22.489583 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,24.60625 2.1166666,2.1166666 0 0 1 10.583333,22.489583 Z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect853-1-96"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
+       d="m 14.552083,16.933333 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.05 2.1166666,2.1166666 0 0 1 10.583333,16.933333 Z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.667884;stroke-miterlimit:4;stroke-dasharray:none"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
+       id="rect860-3"
+       width="4.2333331"
+       height="4.2333331"
+       x="-19.314581"
+       y="22.489584"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.479401"
+       id="rect860-9-4-2-25"
+       width="4.2333331"
+       height="4.2333331"
+       x="15.08125"
+       y="16.933332"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.597374;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect1700"
        width="32.543751"
-       height="26.458334"
+       height="21.166666"
        x="51.59375"
-       y="7.9375"
-       ry="1.332226" />
+       y="13.229167"
+       ry="1.0657808" />
     <rect
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.516849;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect1720"
@@ -417,7 +434,7 @@
        ry="1.4842874" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
        x="9.5399389"
        y="8.4665556"
        id="text890"
@@ -431,7 +448,8 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="block sidebar"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <rect
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.299205"
        id="rect9165"
@@ -444,7 +462,8 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="LCARS"
-     style="display:inline">
+     style="display:none"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -458,7 +477,7 @@
          y="8.4665804">LCARS ACCESS TERMINAL                      BACK</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
        x="9.6469088"
        y="13.714626"
        id="text890-9-0"
@@ -467,7 +486,7 @@
          id="tspan1782-4-8"
          x="9.6469088"
          y="13.714626"
-         style="stroke-width:0.227873;fill:#ffee8d;fill-opacity:1;">SD CONTENTS</tspan></text>
+         style="fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">SD CONTENTS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -497,7 +516,8 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="LCARS Buttons"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <path
        id="rect853-9-6-0-8-5-9-4"
        style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.295661"
