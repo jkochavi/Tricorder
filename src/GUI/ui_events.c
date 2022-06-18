@@ -22,5 +22,5 @@ void keypress(lv_event_t * e)
 
 void checkinitbt(lv_event_t * e)
 {
-	init_keyboard();
+	
 }

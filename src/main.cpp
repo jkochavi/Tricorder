@@ -57,6 +57,11 @@ void my_touchpad_read(lv_indev_drv_t * indev_driver, lv_indev_data_t * data)
 
 void setup()
 {
+   // I2C SETUP
+   begin_sensors();
+   // BT SETUP
+   init_keyboard();
+   // LVGL SETUP
    lv_init();
    tft.begin();         
    tft.setRotation(3); 
@@ -78,9 +83,9 @@ void setup()
    //----------Custom code begins here------------//
    lv_timer_create(console_timer, 5000, NULL);
    lv_timer_create(batterytimer, 30000, NULL);
+   lv_timer_create(read_sensors, 100, NULL);
    ui_init();
    init_sensorpackgui();
-   Wire.begin();
    float battery_level = batterylevel();
    lv_label_set_text_fmt(ui_battery, "BATT %d%s", (int)battery_level, "%");
    lv_textarea_set_text(ui_console, "INIT SUCCESS\n");

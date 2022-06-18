@@ -9,14 +9,14 @@ enum {
     SPECIALCASE
 };
 
+void init_keyboard();
+
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
 void sendpress(const char * txt, const char * txt2);
-
-void init_keyboard();
 
 #ifdef __cplusplus
 }

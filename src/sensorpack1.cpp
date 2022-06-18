@@ -1,11 +1,21 @@
 #include "lvgl.h"
 #include "GUI/ui.h"
+#include "MPU6050.h"
+#include "MCP9808.h"
+#include "I2Cdev.h"
 
 #define addr_MCP9808 0x18
 #define addr_MPU6050 0x68
 
 lv_obj_t * ui_sensorpack1;
 lv_obj_t * ui_sensorreadings1;
+
+MCP9808 temp_sensor;
+MPU6050 gyro_sensor;
+
+int16_t ax, ay, az;
+
+LV_IMG_DECLARE(ui_img_sensorpack1_png);
 
 void init_sensorpackgui(){
     // ui_sensorpack1
@@ -60,3 +70,37 @@ void init_sensorpackgui(){
     lv_obj_move_foreground(ui_keyboard);
 }
 
+void begin_sensors(){
+    // Temp sensor
+    temp_sensor.begin();
+    temp_sensor.tUpper = 25 * 4;
+    temp_sensor.tLower = -10 * 4;
+    temp_sensor.tCritical = 30 * 4;
+    temp_sensor.write();
+    // Gyro sensor
+    gyro_sensor.initialize();
+}
+
+void read_sensors(lv_timer_t * timer){
+    // Temp sensor
+    temp_sensor.read();
+    float temp = 9.0*(temp_sensor.tAmbient / 16.0)/5.0 + 32.0;
+    // Gyro sensor
+    gyro_sensor.getAcceleration(&ax, &ay, &az);
+    float th1 = atan2f(ay, ax)*180/3.14159265358979323846;
+    float th2 = atan2f(ay, az)*180/3.14159265358979323846;
+    float th3 = atan2f(az, ax)*180/3.14159265358979323846;
+    // Update text
+    lv_textarea_set_text(ui_sensorreadings1,"");
+    lv_textarea_add_text(ui_sensorreadings1,
+        ((String)th1).c_str());
+    lv_textarea_add_text(ui_sensorreadings1,"\n");
+    lv_textarea_add_text(ui_sensorreadings1,
+        ((String)th2).c_str());
+    lv_textarea_add_text(ui_sensorreadings1,"\n");
+    lv_textarea_add_text(ui_sensorreadings1,
+        ((String)th3).c_str());
+    lv_textarea_add_text(ui_sensorreadings1,"\n");
+    lv_textarea_add_text(ui_sensorreadings1,
+        ((String)temp).c_str());
+}

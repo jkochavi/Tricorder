@@ -4,21 +4,12 @@
 
 BleKeyboard keyboard("Tricorder");
 
-bool keyboard_init = false;
-
-extern "C" {
-
 void init_keyboard()
 {
-    if (!keyboard_init){
-        lv_textarea_add_text(ui_console, "STARTING BLUETOOTH\n");
-        vTaskDelay(1000/portTICK_PERIOD_MS);
-        keyboard.begin();
-        vTaskDelay(1000/portTICK_PERIOD_MS);
-        lv_textarea_add_text(ui_console, "BLUETOOH ON\n");
-        keyboard_init = true;
-    }
+    keyboard.begin();
 }
+
+extern "C" {
 
 void sendpress(const char * txt, const char * txt2)
 {
