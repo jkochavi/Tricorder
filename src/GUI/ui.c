@@ -11,7 +11,6 @@ lv_obj_t * ui_Home;
 lv_obj_t * ui_battery;
 lv_obj_t * ui_keyboardbutton;
 lv_obj_t * ui_filebutton;
-lv_obj_t * ui_Chart1;
 lv_obj_t * ui_console;
 lv_obj_t * ui_clear;
 lv_obj_t * ui_logswitch;
@@ -160,20 +159,6 @@ void ui_Home_screen_init(void)
     lv_obj_add_event_cb(ui_filebutton, ui_event_filebutton, LV_EVENT_ALL, NULL);
     lv_obj_set_style_img_recolor(ui_filebutton, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_filebutton, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_Chart1
-
-    ui_Chart1 = lv_chart_create(ui_Home);
-
-    lv_obj_set_width(ui_Chart1, 123);
-    lv_obj_set_height(ui_Chart1, 80);
-
-    lv_obj_set_x(ui_Chart1, 195);
-    lv_obj_set_y(ui_Chart1, 50);
-
-    lv_obj_set_style_radius(ui_Chart1, 3, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Chart1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Chart1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // ui_console
 

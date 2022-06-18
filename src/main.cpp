@@ -6,7 +6,6 @@
 #include "cpp_events.h"
 #include "sensorpack1.h"
 //#include "SD_functions.h"
-//#include "Wire.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
@@ -83,7 +82,7 @@ void setup()
    lv_timer_create(console_timer, 5000, NULL);
    lv_timer_create(batterytimer, 30000, NULL);
    lv_timer_create(read_sensors, 100, NULL);
-   //lv_timer_create(update_plot, 1000, NULL);
+   lv_timer_create(update_plot, 1000, NULL);
    ui_init();
    init_sensorpackgui();
    float battery_level = batterylevel();
