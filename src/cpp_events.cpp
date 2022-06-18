@@ -26,7 +26,7 @@ void sendpress(const char * txt, const char * txt2)
     // was pressed, like lowerase,uppercase,backspace,speical chars, etc...
     else {
         if (strcmp(txt, BACKSPACE) == 0){
-            keyboard.write('\b');
+            //keyboard.write('\b');
         }
         else if (strcmp(txt, ENTER) == 0){
             keyboard.write('\n');

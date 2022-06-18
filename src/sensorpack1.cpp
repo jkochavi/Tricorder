@@ -13,17 +13,14 @@ lv_obj_t * ui_sensorreadings1;
 MCP9808 temp_sensor;
 MPU6050 gyro_sensor;
 
-int16_t ax, ay, az;
-//float th1, th2, th3, temp;
-
 #define ROLL  "1"
 #define PITCH "2"
 #define YAW   "3"
 #define TEMP  "4"
 
-lv_chart_series_t * ser1 = lv_chart_add_series(ui_Chart1, 
-    lv_color_hex(0x5a52c1), 
-    LV_CHART_AXIS_PRIMARY_Y);
+//lv_chart_series_t * ser1 = lv_chart_add_series(ui_Chart1, 
+//    lv_color_hex(0x5a52c1), 
+//    LV_CHART_AXIS_PRIMARY_Y);
 
 LV_IMG_DECLARE(ui_img_sensorpack1_png);
 
@@ -93,6 +90,7 @@ void begin_sensors(){
 
 void read_sensors(lv_timer_t * timer){
     // Temp sensor
+    int16_t ax, ay, az;
     temp_sensor.read();
     float temp = 9.0*(temp_sensor.tAmbient / 16.0)/5.0 + 32.0;
     // Gyro sensor

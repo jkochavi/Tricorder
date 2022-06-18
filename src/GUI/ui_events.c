@@ -19,8 +19,3 @@ void keypress(lv_event_t * e)
 	sendpress(txt, txt2);
 	lv_textarea_set_text(ui_character,"");
 }
-
-void execute(lv_event_t * e)
-{
-	const char * cmd = lv_textarea_get_text(ui_cmdtextarea);
-}
