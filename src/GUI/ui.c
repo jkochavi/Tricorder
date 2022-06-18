@@ -408,7 +408,9 @@ void ui_LCARS_screen_init(void)
     lv_obj_set_height(ui_cmdkeyboard, 180);
 
     lv_obj_set_x(ui_cmdkeyboard, 0);
-    lv_obj_set_y(ui_cmdkeyboard, 60);
+    lv_obj_set_y(ui_cmdkeyboard, 30);
+
+    lv_obj_set_align(ui_cmdkeyboard, LV_ALIGN_CENTER);
 
     lv_obj_add_flag(ui_cmdkeyboard, LV_OBJ_FLAG_HIDDEN);
 
