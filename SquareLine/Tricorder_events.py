@@ -42,3 +42,7 @@ def checkinitbt(event_struct):
 def execute(event_struct):
     return
 
+
+def modifytimers(event_struct):
+    return
+

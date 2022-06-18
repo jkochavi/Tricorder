@@ -58,6 +58,14 @@ static void ui_event_clear(lv_event_t * e)
         clearconsoletext(e);
     }
 }
+static void ui_event_logswitch(lv_event_t * e)
+{
+    lv_event_code_t event = lv_event_get_code(e);
+    lv_obj_t * ta = lv_event_get_target(e);
+    if(event == LV_EVENT_VALUE_CHANGED) {
+        modifytimers(e);
+    }
+}
 static void ui_event_keyboard(lv_event_t * e)
 {
     lv_event_code_t event = lv_event_get_code(e);
@@ -230,6 +238,7 @@ void ui_Home_screen_init(void)
     lv_obj_set_x(ui_logswitch, 32);
     lv_obj_set_y(ui_logswitch, 106);
 
+    lv_obj_add_event_cb(ui_logswitch, ui_event_logswitch, LV_EVENT_ALL, NULL);
     lv_obj_set_style_radius(ui_logswitch, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0x101648), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_logswitch, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
