@@ -41,7 +41,6 @@ static void ui_event_keyboardbutton(lv_event_t * e)
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
         _ui_flag_modify(ui_keyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
-        checkinitbt(e);
     }
 }
 static void ui_event_filebutton(lv_event_t * e)

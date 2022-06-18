@@ -20,12 +20,7 @@ void keypress(lv_event_t * e)
 	lv_textarea_set_text(ui_character,"");
 }
 
-void checkinitbt(lv_event_t * e)
-{
-	
-}
-
 void execute(lv_event_t * e)
 {
-	// Your code here
+	const char * cmd = lv_texarea_get_text(ui_cmdtextarea);
 }

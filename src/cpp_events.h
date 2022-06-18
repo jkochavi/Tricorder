@@ -18,6 +18,8 @@ extern "C"
 
 void sendpress(const char * txt, const char * txt2);
 
+void eval_cmd(const char * cmd);
+
 #ifdef __cplusplus
 }
 #endif
