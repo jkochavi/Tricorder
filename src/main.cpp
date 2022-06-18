@@ -2,12 +2,12 @@
 #include "TFT_eSPI.h"
 #include "lvgl.h"
 #include "GUI/ui.h"
-#include "cpp_timers.h"
-#include "cpp_events.h"
-#include "BleKeyboard.h"
+//#include "cpp_timers.h"
+//#include "cpp_events.h"
+//#include "BleKeyboard.h"
 //#include "SD_functions.h"
-#include "Wire.h"
-#include "sensorpack1.h"
+//#include "Wire.h"
+//#include "sensorpack1.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
@@ -17,7 +17,7 @@
 // #define TFT_CS    4  // Chip select control pin
 // #define TFT_DC    2  // Data Command control pin
 // #define TFT_RST   5  // Reset pin (could connect to RST pin)
-// #define TOUCH_CS 32     // Chip select pin (T_CS) of touch screen
+// #define TOUCH_CS 32  // Chip select pin (T_CS) of touch screen
 
 // Hardware pins for the SD card
 // SCK is pin 18
