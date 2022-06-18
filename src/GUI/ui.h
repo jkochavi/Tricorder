@@ -22,7 +22,6 @@ extern lv_obj_t * ui_keyboardbutton;
 extern lv_obj_t * ui_filebutton;
 extern lv_obj_t * ui_console;
 extern lv_obj_t * ui_clear;
-extern lv_obj_t * ui_logswitch;
 extern lv_obj_t * ui_character;
 extern lv_obj_t * ui_keyboard;
 extern lv_obj_t * ui_sigchoice;
@@ -33,7 +32,6 @@ extern lv_obj_t * ui_cmdtextarea;
 extern lv_obj_t * ui_cmdkeyboard;
 
 void clearconsoletext(lv_event_t * e);
-void modifytimers(lv_event_t * e);
 void keypress(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png

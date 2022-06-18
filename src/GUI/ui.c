@@ -13,7 +13,6 @@ lv_obj_t * ui_keyboardbutton;
 lv_obj_t * ui_filebutton;
 lv_obj_t * ui_console;
 lv_obj_t * ui_clear;
-lv_obj_t * ui_logswitch;
 lv_obj_t * ui_character;
 lv_obj_t * ui_keyboard;
 lv_obj_t * ui_sigchoice;
@@ -56,14 +55,6 @@ static void ui_event_clear(lv_event_t * e)
     lv_obj_t * ta = lv_event_get_target(e);
     if(event == LV_EVENT_CLICKED) {
         clearconsoletext(e);
-    }
-}
-static void ui_event_logswitch(lv_event_t * e)
-{
-    lv_event_code_t event = lv_event_get_code(e);
-    lv_obj_t * ta = lv_event_get_target(e);
-    if(event == LV_EVENT_VALUE_CHANGED) {
-        modifytimers(e);
     }
 }
 static void ui_event_keyboard(lv_event_t * e)
@@ -227,24 +218,6 @@ void ui_Home_screen_init(void)
     lv_obj_add_event_cb(ui_clear, ui_event_clear, LV_EVENT_ALL, NULL);
     lv_obj_set_style_img_recolor(ui_clear, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_clear, 150, LV_PART_MAIN | LV_STATE_PRESSED);
-
-    // ui_logswitch
-
-    ui_logswitch = lv_switch_create(ui_Home);
-
-    lv_obj_set_width(ui_logswitch, 41);
-    lv_obj_set_height(ui_logswitch, 16);
-
-    lv_obj_set_x(ui_logswitch, 32);
-    lv_obj_set_y(ui_logswitch, 106);
-
-    lv_obj_add_event_cb(ui_logswitch, ui_event_logswitch, LV_EVENT_ALL, NULL);
-    lv_obj_set_style_radius(ui_logswitch, 8, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0x101648), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_logswitch, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-
-    lv_obj_set_style_bg_color(ui_logswitch, lv_color_hex(0xFFEE8B), LV_PART_KNOB | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_logswitch, 255, LV_PART_KNOB | LV_STATE_DEFAULT);
 
     // ui_character
 
