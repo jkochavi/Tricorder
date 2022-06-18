@@ -24,3 +24,8 @@ void checkinitbt(lv_event_t * e)
 {
 	init_keyboard();
 }
+
+void execute(lv_event_t * e)
+{
+	// Your code here
+}

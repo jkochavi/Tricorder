@@ -38,3 +38,7 @@ def initbt(event_struct):
 def checkinitbt(event_struct):
     return
 
+
+def execute(event_struct):
+    return
+

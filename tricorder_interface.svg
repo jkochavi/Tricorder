@@ -15,7 +15,7 @@
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="tricorder_interface.svg"
-   inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\home.png"
+   inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\LCARS.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -53,7 +53,7 @@
      inkscape:cx="189.74999"
      inkscape:cy="120.74999"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer8"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -139,32 +139,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Buttons"
-     style="display:inline;mix-blend-mode:normal">
-    <path
-       id="rect853-1"
-       style="fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,22.489583 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,24.60625 2.1166666,2.1166666 0 0 1 10.583333,22.489583 Z"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       id="rect853-1-96"
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,16.933333 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.05 2.1166666,2.1166666 0 0 1 10.583333,16.933333 Z"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <rect
-       style="fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
-       id="rect860-3"
-       width="4.2333331"
-       height="4.2333331"
-       x="-19.314581"
-       y="22.489584"
-       transform="scale(-1,1)"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
+     style="display:none;mix-blend-mode:normal"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#000000;fill-opacity:1;stroke-width:0.479401"
        id="rect860-3-1-3-6"
@@ -173,16 +149,6 @@
        x="-19.314581"
        y="5.2916689"
        transform="scale(-1,1)" />
-    <rect
-       style="fill:#68ccff;stroke-width:0.479401"
-       id="rect860-9-4-2-25"
-       width="4.2333331"
-       height="4.2333331"
-       x="15.08125"
-       y="16.933332"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton4.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
     <path
        id="rect853-9-6-0-8-5"
        style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
@@ -208,8 +174,15 @@
        inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="sensorpack1"
+     sodipodi:insensitive="true"
+     style="display:none">
     <rect
-       style="font-variation-settings:'wght' 400;fill:#000000;stroke-width:0.526675;fill-opacity:1"
+       style="font-variation-settings:'wght' 400;display:inline;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke-width:0.526675"
        id="rect1029"
        width="38.629166"
        height="25.4"
@@ -218,58 +191,6 @@
        inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\sensorpack1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="Text"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
-       x="23.012856"
-       y="18.499973"
-       id="text890-6"
-       transform="scale(0.86125471,1.1610967)"><tspan
-         sodipodi:role="line"
-         id="tspan1788"
-         x="23.012856"
-         y="18.499973">KEYBOARD</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
-       x="23.012856"
-       y="23.285318"
-       id="text890-2-8-9"
-       transform="scale(0.86125471,1.1610967)"><tspan
-         sodipodi:role="line"
-         id="tspan1830"
-         x="23.012856"
-         y="23.285318">LCARS ACCESS</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
-       x="59.616978"
-       y="34.451126"
-       id="text890-2-8-8"
-       transform="scale(0.86125471,1.1610967)"><tspan
-         sodipodi:role="line"
-         id="tspan888-1-5-4"
-         x="59.616978"
-         y="34.451126"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">CONSOLE</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
-       x="23.012856"
-       y="28.070665"
-       id="text890-6-5"
-       transform="scale(0.86125471,1.1610967)"><tspan
-         sodipodi:role="line"
-         id="tspan1788-6"
-         x="23.012856"
-         y="28.070665"
-         style="stroke-width:0.227873">LOG DATA</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -330,15 +251,156 @@
          y="49.439629"
          style="stroke-width:0.227873"
          id="tspan1061-4-2-7">TEMP:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="42.674095"
+       y="35.127773"
+       id="text890-2-8-9-7-1"
+       transform="scale(0.86125471,1.1610967)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\sensorpack1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="42.674095"
+         y="35.127773"
+         style="stroke-width:0.227873"
+         id="tspan1061-40">DEG </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="42.674095"
+       y="39.91312"
+       id="text890-2-8-9-7-1-3"
+       transform="scale(0.86125471,1.1610967)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\sensorpack1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="42.674095"
+         y="39.91312"
+         style="stroke-width:0.227873"
+         id="tspan1061-40-5">DEG </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="42.674095"
+       y="44.698463"
+       id="text890-2-8-9-7-1-6"
+       transform="scale(0.86125471,1.1610967)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\sensorpack1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="42.674095"
+         y="44.698463"
+         style="stroke-width:0.227873"
+         id="tspan1061-40-6">DEG </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="42.674095"
+       y="49.48381"
+       id="text890-2-8-9-7-1-7"
+       transform="scale(0.86125471,1.1610967)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\School Work\Tricorder\SquareLine\assets\sensorpack1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="42.674095"
+         y="49.48381"
+         style="stroke-width:0.227873"
+         id="tspan1061-40-3">F </tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="Other Widgets"
+     id="layer10"
+     inkscape:label="Home"
      style="display:none"
      sodipodi:insensitive="true">
+    <path
+       id="rect853-1"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
+       d="m 14.552083,22.489583 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,24.60625 2.1166666,2.1166666 0 0 1 10.583333,22.489583 Z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="rect853-1-96"
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
+       d="m 14.552083,16.933333 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.05 2.1166666,2.1166666 0 0 1 10.583333,16.933333 Z"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.667884;stroke-miterlimit:4;stroke-dasharray:none"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
+       id="rect860-3"
+       width="4.2333331"
+       height="4.2333331"
+       x="-19.314581"
+       y="22.489584"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.479401"
+       id="rect860-9-4-2-25"
+       width="4.2333331"
+       height="4.2333331"
+       x="15.08125"
+       y="16.933332"
+       inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton4.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="23.012856"
+       y="18.499973"
+       id="text890-6"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1788"
+         x="23.012856"
+         y="18.499973">KEYBOARD</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="23.012856"
+       y="23.285318"
+       id="text890-2-8-9"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1830"
+         x="23.012856"
+         y="23.285318">LCARS ACCESS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="23.012856"
+       y="28.070665"
+       id="text890-6-5"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1788-6"
+         x="23.012856"
+         y="28.070665"
+         style="stroke-width:0.227873">LOG DATA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="59.616978"
+       y="34.451126"
+       id="text890-2-8-8"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan888-1-5-4"
+         x="59.616978"
+         y="34.451126"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">CONSOLE</tspan></text>
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.667884;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect1700"
        width="32.543751"
        height="26.458334"
@@ -346,7 +408,7 @@
        y="7.9375"
        ry="1.332226" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.516849;stroke-miterlimit:4;stroke-dasharray:none"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.516849;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect1720"
        width="32.543751"
        height="14.552083"
@@ -367,12 +429,11 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="Block Sidebar"
-     style="display:none"
+     id="layer11"
+     inkscape:label="block sidebar"
      sodipodi:insensitive="true">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.299205"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.299205"
        id="rect9165"
        width="42.10479"
        height="54.469543"
@@ -383,8 +444,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="LCARS"
-     sodipodi:insensitive="true"
-     style="display:none">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -396,13 +456,48 @@
          id="tspan1782-4"
          x="9.5399933"
          y="8.4665804">LCARS ACCESS TERMINAL                      BACK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873;"
+       x="9.6469088"
+       y="13.714626"
+       id="text890-9-0"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1782-4-8"
+         x="9.6469088"
+         y="13.714626"
+         style="stroke-width:0.227873;fill:#ffee8d;fill-opacity:1;">SD CONTENTS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="51.936806"
+       y="13.714626"
+       id="text890-9-0-6"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1782-4-8-1"
+         x="51.936806"
+         y="13.714626"
+         style="fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">COMMAND PROMPT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="51.890297"
+       y="18.727846"
+       id="text890-9-0-6-1"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1782-4-8-1-7"
+         x="51.890297"
+         y="18.727846"
+         style="fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">MACRO CONFIGURATION</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="LCARS Buttons"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:none">
     <path
        id="rect853-9-6-0-8-5-9-4"
        style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.295661"
@@ -421,134 +516,22 @@
        inkscape:export-filename="C:\Users\jdkoc\Desktop\square1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="g9763"
-     inkscape:label="Bluetooth"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
-       x="9.5399933"
-       y="8.4665804"
-       id="text9761"
-       transform="scale(0.86125471,1.1610967)"><tspan
-         sodipodi:role="line"
-         id="tspan9759"
-         x="9.5399933"
-         y="8.4665804">BLUETOOTH SETUP                               BACK</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
-       x="8.5989571"
-       y="15.742707"
-       id="text25015"><tspan
-         sodipodi:role="line"
-         id="tspan25013"
-         style="stroke-width:0.264583"
-         x="8.5989571"
-         y="15.742707" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
-       x="16.139582"
-       y="26.590622"
-       id="text25847"><tspan
-         sodipodi:role="line"
-         id="tspan25845"
-         style="stroke-width:0.264583"
-         x="16.139582"
-         y="26.590622" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
-       x="8.2164125"
-       y="16.050182"
-       id="text27507"><tspan
-         sodipodi:role="line"
-         id="tspan27505"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
-         x="8.2164125"
-         y="16.050182">STATUS</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;display:inline;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
-       x="28.769304"
-       y="27.956432"
-       id="text27507-2"><tspan
-         sodipodi:role="line"
-         id="tspan27505-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;fill:#ffee8d;fill-opacity:1;stroke-width:0.264583"
-         x="28.769304"
-         y="27.956432">KEYBOARD</tspan></text>
     <path
-       id="path47780"
-       style="display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:4.28546"
-       d="m 43.994141,200 a 7.9999996,7.9999996 0 0 0 -7.902344,6.79492 7.9999996,7.9999996 0 0 0 6.681641,9.11133 l 0.08398,0.0117 A 7.9999996,7.9999996 0 0 0 44,215.99805 V 216 h 262 v -0.002 a 7.9999996,7.9999996 0 0 0 7.91406,-6.83399 7.9999996,7.9999996 0 0 0 -6.72851,-9.07617 A 7.9999996,7.9999996 0 0 0 306,200 H 305.994 44 a 7.9999996,7.9999996 0 0 0 -0.0059,0 z"
-       transform="scale(0.26458333)" />
-    <path
-       id="path47780-7"
-       style="display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:1.13386"
-       d="M 11.640017,17.991667 A 2.1166665,2.1166665 0 0 0 9.5491885,19.78949 2.1166665,2.1166665 0 0 0 11.31704,22.200196 l 0.02222,0.0031 a 2.1166665,2.1166665 0 0 0 0.302309,0.02119 v 5.15e-4 H 80.9624 v -5.3e-4 a 2.1166665,2.1166665 0 0 0 2.093928,-1.80816 2.1166665,2.1166665 0 0 0 -1.780251,-2.401403 2.1166665,2.1166665 0 0 0 -0.313677,-0.02324 H 80.9608 11.641556 a 2.1166665,2.1166665 0 0 0 -0.0016,0 z" />
-    <text
-       xml:space="preserve"
-       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
-       x="47.785999"
-       y="15.921377"
-       id="text52891"><tspan
-         sodipodi:role="line"
-         id="tspan52889"
-         style="stroke-width:0.264583"
-         x="47.785999"
-         y="15.921377" /></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="g9757"
-     inkscape:label="Bluetooth Buttons"
-     style="display:none">
-    <path
-       id="path9753"
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.295661"
-       d="m 76.993746,5.2916622 v 4.233334 h 3.968751 a 2.1166666,2.1166666 0 0 0 2.116667,-2.116667 2.1166666,2.1166666 0 0 0 -2.116667,-2.116667 z"
+       id="rect853-9-6-0-8-5-9-4-8"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
+       d="m 77.522915,11.1125 v 4.233335 h 3.968751 A 2.1166666,2.1166666 0 0 0 83.608333,13.229167 2.1166666,2.1166666 0 0 0 81.491666,11.1125 Z"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\round4.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="display:inline;mix-blend-mode:normal;fill:#68ccff;fill-opacity:1;stroke-width:0.479401"
-       id="rect9755"
+       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
+       id="rect860-3-1-3-6-6-0-8-5-9-3"
        width="4.2333331"
        height="4.2333331"
-       x="-76.464584"
-       y="5.291666"
+       x="-76.993752"
+       y="11.112505"
        transform="scale(-1,1)"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\square1.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       id="rect853-9-6-0-8-5-3"
-       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
-       d="m 20.902082,23.8125 v 4.233333 h 3.96875 A 2.1166666,2.1166666 0 0 0 26.987499,25.929167 2.1166666,2.1166666 0 0 0 24.870832,23.8125 Z"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <path
-       id="rect853-1-9-2-1-8-1-2"
-       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.295661"
-       d="m 15.610415,23.8125 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 9.5249994,25.929167 2.1166666,2.1166666 0 0 1 11.641665,23.8125 Z"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png" />
-    <rect
-       style="display:inline;mix-blend-mode:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.479401"
-       id="rect860-3-1-3-6-6-0-8-8"
-       width="4.2333331"
-       height="4.2333331"
-       x="-20.372911"
-       y="23.8125"
-       transform="scale(-1,1)"
-       inkscape:export-filename="C:\Users\jdkoc\Desktop\fullbutton1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>
