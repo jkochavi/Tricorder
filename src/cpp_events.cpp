@@ -1,6 +1,8 @@
 #include "cpp_events.h"
 #include "BleKeyboard.h"
+#include "lvgl.h"
 #include "GUI/ui.h"
+#include "sensorpack1.h"
 
 BleKeyboard keyboard("Tricorder");
 
@@ -39,9 +41,4 @@ void sendpress(const char * txt, const char * txt2)
         }
     }
 }
-}
-
-void eval_cmd(const char * cmd)
-{
-    
 }

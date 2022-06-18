@@ -8,22 +8,21 @@
 
 #define addr_MCP9808 0x18
 #define addr_MPU6050 0x68
-
-lv_obj_t * ui_sensorpack1;
-lv_obj_t * ui_sensorreadings1;
-lv_obj_t * ui_Chart1;
-lv_chart_series_t * ser1;
-
-MCP9808 temp_sensor;
-MPU6050 gyro_sensor;
-
 #define ROLL  "1"
 #define PITCH "2"
 #define YAW   "3"
 #define TEMP  "4"
 #define IMPLEMENTATION LIFO
 
-cppQueue	q(4, 10, IMPLEMENTATION, true);	// Instantiate queue
+lv_obj_t * ui_sensorpack1;
+lv_obj_t * ui_sensorreadings1;
+lv_obj_t * ui_Chart1;
+lv_chart_series_t * ser1;
+MCP9808 temp_sensor;
+MPU6050 gyro_sensor;
+cppQueue q(4, 10, IMPLEMENTATION, true);	// Instantiate queue
+float max_reading = 0;
+float min_reading = 0;
 
 LV_IMG_DECLARE(ui_img_sensorpack1_png);
 
@@ -72,7 +71,8 @@ void init_sensorpackgui(){
     lv_obj_set_style_radius(ui_Chart1, 3, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_Chart1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Chart1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    ser1 = lv_chart_add_series(ui_Chart1,lv_color_make(255,0,0), LV_CHART_AXIS_PRIMARY_Y);
+    ser1 = lv_chart_add_series(ui_Chart1,lv_color_make(255,238,139), LV_CHART_AXIS_PRIMARY_Y);
+    lv_chart_set_update_mode(ui_Chart1,LV_CHART_UPDATE_MODE_CIRCULAR);    
     // Modify keyboard layer
     lv_obj_move_foreground(ui_keyboard);
 }
@@ -134,8 +134,9 @@ void update_plot(lv_timer_t * timer)
 {
     float reading;
     q.pull(&reading);
+    if (reading > max_reading){max_reading = reading;}
+    else if (reading < min_reading){min_reading = reading;}
     lv_chart_set_next_value(ui_Chart1,ser1,reading);
-    //lv_textarea_add_text(ui_console, 
-    //    ((String)reading).c_str());
+    lv_chart_set_range(ui_Chart1, LV_CHART_AXIS_PRIMARY_Y, min_reading, max_reading);
 }
 
