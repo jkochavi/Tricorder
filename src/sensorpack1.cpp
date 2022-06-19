@@ -13,6 +13,7 @@
 #define YAW   "3"
 #define TEMP  "4"
 #define IMPLEMENTATION LIFO
+#define WINDOW_LENGTH 50
 
 lv_obj_t * ui_sensorpack1;
 lv_obj_t * ui_sensorreadings1;
@@ -72,7 +73,8 @@ void init_sensorpackgui(){
     lv_obj_set_style_bg_color(ui_Chart1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Chart1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     ser1 = lv_chart_add_series(ui_Chart1,lv_color_make(255,238,139), LV_CHART_AXIS_PRIMARY_Y);
-    lv_chart_set_update_mode(ui_Chart1,LV_CHART_UPDATE_MODE_CIRCULAR);    
+    lv_chart_set_update_mode(ui_Chart1,LV_CHART_UPDATE_MODE_SHIFT);    
+    lv_chart_set_point_count(ui_Chart1,WINDOW_LENGTH);
     // Modify keyboard layer
     lv_obj_move_foreground(ui_keyboard);
 }
