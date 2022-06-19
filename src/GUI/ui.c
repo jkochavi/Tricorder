@@ -13,12 +13,15 @@ lv_obj_t * ui_keyboardbutton;
 lv_obj_t * ui_filebutton;
 lv_obj_t * ui_console;
 lv_obj_t * ui_clear;
+lv_obj_t * ui_macrobutton;
+lv_obj_t * ui_sigchoice;
 lv_obj_t * ui_character;
 lv_obj_t * ui_keyboard;
-lv_obj_t * ui_sigchoice;
 lv_obj_t * ui_LCARS;
 lv_obj_t * ui_back1;
 lv_obj_t * ui_cmdbutton;
+lv_obj_t * ui_sdcontents;
+lv_obj_t * ui_macroconfig;
 lv_obj_t * ui_cmdtextarea;
 lv_obj_t * ui_cmdkeyboard;
 
@@ -135,7 +138,7 @@ void ui_Home_screen_init(void)
     lv_obj_set_height(ui_keyboardbutton, LV_SIZE_CONTENT);
 
     lv_obj_set_x(ui_keyboardbutton, 32);
-    lv_obj_set_y(ui_keyboardbutton, 64);
+    lv_obj_set_y(ui_keyboardbutton, 43);
 
     lv_obj_add_flag(ui_keyboardbutton, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
     lv_obj_clear_flag(ui_keyboardbutton, LV_OBJ_FLAG_SCROLLABLE);
@@ -153,7 +156,7 @@ void ui_Home_screen_init(void)
     lv_obj_set_height(ui_filebutton, LV_SIZE_CONTENT);
 
     lv_obj_set_x(ui_filebutton, 32);
-    lv_obj_set_y(ui_filebutton, 85);
+    lv_obj_set_y(ui_filebutton, 64);
 
     lv_obj_add_flag(ui_filebutton, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
     lv_obj_clear_flag(ui_filebutton, LV_OBJ_FLAG_SCROLLABLE);
@@ -222,6 +225,39 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_img_recolor(ui_clear, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_clear, 150, LV_PART_MAIN | LV_STATE_PRESSED);
 
+    // ui_macrobutton
+
+    ui_macrobutton = lv_img_create(ui_Home);
+    lv_img_set_src(ui_macrobutton, &ui_img_halfbutton3_png);
+
+    lv_obj_set_width(ui_macrobutton, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_macrobutton, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_macrobutton, 32);
+    lv_obj_set_y(ui_macrobutton, 85);
+
+    lv_obj_add_flag(ui_macrobutton, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_CHECKABLE | LV_OBJ_FLAG_ADV_HITTEST);
+    lv_obj_clear_flag(ui_macrobutton, LV_OBJ_FLAG_SCROLLABLE);
+
+    lv_obj_set_style_img_recolor(ui_macrobutton, lv_color_hex(0x000032), LV_PART_MAIN | LV_STATE_PRESSED);
+    lv_obj_set_style_img_recolor_opa(ui_macrobutton, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+
+    // ui_sigchoice
+
+    ui_sigchoice = lv_label_create(ui_Home);
+
+    lv_obj_set_width(ui_sigchoice, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_sigchoice, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_sigchoice, 240);
+    lv_obj_set_y(ui_sigchoice, 30);
+
+    lv_label_set_text(ui_sigchoice, "1");
+
+    lv_obj_set_style_text_color(ui_sigchoice, lv_color_hex(0x6ACEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_sigchoice, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_sigchoice, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
+
     // ui_character
 
     ui_character = lv_textarea_create(ui_Home);
@@ -274,22 +310,6 @@ void ui_Home_screen_init(void)
     lv_obj_set_style_bg_color(ui_keyboard, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_keyboard, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // ui_sigchoice
-
-    ui_sigchoice = lv_label_create(ui_Home);
-
-    lv_obj_set_width(ui_sigchoice, LV_SIZE_CONTENT);
-    lv_obj_set_height(ui_sigchoice, LV_SIZE_CONTENT);
-
-    lv_obj_set_x(ui_sigchoice, 240);
-    lv_obj_set_y(ui_sigchoice, 30);
-
-    lv_label_set_text(ui_sigchoice, "1");
-
-    lv_obj_set_style_text_color(ui_sigchoice, lv_color_hex(0x6ACEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_sigchoice, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_sigchoice, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
-
     // POST CALLS
     lv_keyboard_set_textarea(ui_keyboard, ui_character);
 
@@ -340,6 +360,51 @@ void ui_LCARS_screen_init(void)
     lv_obj_add_event_cb(ui_cmdbutton, ui_event_cmdbutton, LV_EVENT_ALL, NULL);
     lv_obj_set_style_img_recolor(ui_cmdbutton, lv_color_hex(0x320000), LV_PART_MAIN | LV_STATE_PRESSED);
     lv_obj_set_style_img_recolor_opa(ui_cmdbutton, 150, LV_PART_MAIN | LV_STATE_PRESSED);
+
+    // ui_sdcontents
+
+    ui_sdcontents = lv_textarea_create(ui_LCARS);
+
+    lv_obj_set_width(ui_sdcontents, 130);
+    lv_obj_set_height(ui_sdcontents, 156);
+
+    lv_obj_set_x(ui_sdcontents, 31);
+    lv_obj_set_y(ui_sdcontents, 65);
+
+    if("" == "") lv_textarea_set_accepted_chars(ui_sdcontents, NULL);
+    else lv_textarea_set_accepted_chars(ui_sdcontents, "");
+
+    lv_textarea_set_text(ui_sdcontents, "");
+    lv_textarea_set_placeholder_text(ui_sdcontents, "");
+
+    lv_obj_set_style_text_color(ui_sdcontents, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_sdcontents, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_sdcontents, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui_sdcontents, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_sdcontents, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_sdcontents, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_color(ui_sdcontents, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_opa(ui_sdcontents, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_left(ui_sdcontents, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_right(ui_sdcontents, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_top(ui_sdcontents, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_bottom(ui_sdcontents, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    // ui_macroconfig
+
+    ui_macroconfig = lv_label_create(ui_LCARS);
+
+    lv_obj_set_width(ui_macroconfig, LV_SIZE_CONTENT);
+    lv_obj_set_height(ui_macroconfig, LV_SIZE_CONTENT);
+
+    lv_obj_set_x(ui_macroconfig, 169);
+    lv_obj_set_y(ui_macroconfig, 85);
+
+    lv_label_set_text(ui_macroconfig, "NOT SELECTED");
+
+    lv_obj_set_style_text_color(ui_macroconfig, lv_color_hex(0x6ACEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_macroconfig, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_macroconfig, &ui_font_Regular_Text, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     // ui_cmdtextarea
 

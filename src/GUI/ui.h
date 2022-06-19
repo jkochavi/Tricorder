@@ -22,12 +22,15 @@ extern lv_obj_t * ui_keyboardbutton;
 extern lv_obj_t * ui_filebutton;
 extern lv_obj_t * ui_console;
 extern lv_obj_t * ui_clear;
+extern lv_obj_t * ui_macrobutton;
+extern lv_obj_t * ui_sigchoice;
 extern lv_obj_t * ui_character;
 extern lv_obj_t * ui_keyboard;
-extern lv_obj_t * ui_sigchoice;
 extern lv_obj_t * ui_LCARS;
 extern lv_obj_t * ui_back1;
 extern lv_obj_t * ui_cmdbutton;
+extern lv_obj_t * ui_sdcontents;
+extern lv_obj_t * ui_macroconfig;
 extern lv_obj_t * ui_cmdtextarea;
 extern lv_obj_t * ui_cmdkeyboard;
 
@@ -39,6 +42,7 @@ LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton5_png);    // assets\halfbutton5.png
 LV_IMG_DECLARE(ui_img_halfbutton2_png);    // assets\halfbutton2.png
 LV_IMG_DECLARE(ui_img_halfbutton4_png);    // assets\halfbutton4.png
+LV_IMG_DECLARE(ui_img_halfbutton3_png);    // assets\halfbutton3.png
 LV_IMG_DECLARE(ui_img_lcars_png);    // assets\LCARS.png
 LV_IMG_DECLARE(ui_img_halfbutton1_png);    // assets\halfbutton1.png
 

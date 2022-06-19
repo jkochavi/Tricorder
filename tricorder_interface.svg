@@ -321,24 +321,24 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
        x="23.012856"
-       y="18.499973"
+       y="13.714626"
        id="text890-6"
        transform="scale(0.86125471,1.1610967)"><tspan
          sodipodi:role="line"
          id="tspan1788"
          x="23.012856"
-         y="18.499973">KEYBOARD</tspan></text>
+         y="13.714626">KEYBOARD</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
        x="23.012856"
-       y="23.285318"
+       y="18.499971"
        id="text890-2-8-9"
        transform="scale(0.86125471,1.1610967)"><tspan
          sodipodi:role="line"
          id="tspan1830"
          x="23.012856"
-         y="23.285318">LCARS ACCESS</tspan></text>
+         y="18.499971">LCARS ACCESS</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffee8d;fill-opacity:1;stroke:none;stroke-width:0.227873"
@@ -363,6 +363,18 @@
          x="59.616978"
          y="10.980143"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;font-family:Antonio;-inkscape-font-specification:Antonio;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffee8d;fill-opacity:1;stroke-width:0.227873">SIGNAL </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       x="23.012856"
+       y="23.285318"
+       id="text890-6-7"
+       transform="scale(0.86125471,1.1610967)"><tspan
+         sodipodi:role="line"
+         id="tspan1788-7"
+         x="23.012856"
+         y="23.285318"
+         style="stroke-width:0.227873">MACRO PADD</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -372,14 +384,14 @@
     <path
        id="rect853-1"
        style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,22.489583 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,24.60625 2.1166666,2.1166666 0 0 1 10.583333,22.489583 Z"
+       d="m 14.552083,16.933332 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.049999 2.1166666,2.1166666 0 0 1 10.583333,16.933332 Z"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        id="rect853-1-96"
        style="display:inline;mix-blend-mode:normal;fill:#68ccff;stroke-width:0.295661"
-       d="m 14.552083,16.933333 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,19.05 2.1166666,2.1166666 0 0 1 10.583333,16.933333 Z"
+       d="m 14.552083,11.377082 v 4.233333 h -3.96875 A 2.1166666,2.1166666 0 0 1 8.4666667,13.493749 2.1166666,2.1166666 0 0 1 10.583333,11.377082 Z"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -389,7 +401,7 @@
        width="4.2333331"
        height="4.2333331"
        x="-19.314581"
-       y="22.489584"
+       y="16.933334"
        transform="scale(-1,1)"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton2.png"
        inkscape:export-xdpi="96"
@@ -400,7 +412,7 @@
        width="4.2333331"
        height="4.2333331"
        x="15.08125"
-       y="16.933332"
+       y="11.377081"
        inkscape:export-filename="C:\Users\jdkoc\Desktop\halfbutton4.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -422,7 +434,7 @@
        ry="1.4842874" />
     <text
        xml:space="preserve"
-       style="display:inline;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7625px;line-height:1.25;font-family:Antonio;-inkscape-font-specification:'Antonio, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;letter-spacing:0px;word-spacing:0px;display:inline;fill:#68ccff;fill-opacity:1;stroke:none;stroke-width:0.227873"
        x="9.5399389"
        y="8.4665556"
        id="text890"
