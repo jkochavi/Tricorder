@@ -1,13 +1,10 @@
-#define BACKSPACE  "\xef\x95\x9A"
-#define ENTER      "\xef\xA2\xA2"
-#define LEFTARROW  "\xef\x81\x93"
-#define RIGHTARROW "\xef\x81\x94"
-
-enum {
-    LOWERCASE,
-    UPPERCASE,
-    SPECIALCASE
-};
+/** @file cpp_events.h
+ * This is the header file for the custom event callbacks as part of the GUI. 
+ * It contains one function compiled in C++ for initializing the Bluetooth HID device, and
+ * two functions for the GUI event callbacks that are compiled in C. 
+ * @author Jordan Kochavi
+ * @date 19 June latest modification
+ */ 
 
 void init_keyboard();
 
