@@ -39,7 +39,7 @@ void init_sensorpackgui(){
     lv_obj_clear_flag(ui_sensorpack1, LV_OBJ_FLAG_SCROLLABLE);
     // ui_sensorreadings1
     ui_sensorreadings1 = lv_textarea_create(ui_Home);
-    lv_obj_set_width(ui_sensorreadings1, 100);
+    lv_obj_set_width(ui_sensorreadings1, 70);
     lv_obj_set_height(ui_sensorreadings1, 88);
     lv_obj_set_x(ui_sensorreadings1, 70);
     lv_obj_set_y(ui_sensorreadings1, 133);
