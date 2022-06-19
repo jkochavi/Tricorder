@@ -33,6 +33,7 @@ extern lv_obj_t * ui_cmdkeyboard;
 
 void clearconsoletext(lv_event_t * e);
 void keypress(lv_event_t * e);
+void execcmd(lv_event_t * e);
 
 LV_IMG_DECLARE(ui_img_home_png);    // assets\home.png
 LV_IMG_DECLARE(ui_img_halfbutton5_png);    // assets\halfbutton5.png

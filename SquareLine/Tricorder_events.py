@@ -46,3 +46,7 @@ def execute(event_struct):
 def modifytimers(event_struct):
     return
 
+
+def execcmd(event_struct):
+    return
+
