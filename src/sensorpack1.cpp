@@ -21,7 +21,7 @@ lv_obj_t * ui_Chart1;
 lv_chart_series_t * ser1;
 MCP9808 temp_sensor;
 MPU6050 gyro_sensor;
-cppQueue q(4, 10, IMPLEMENTATION, true);	// Instantiate queue
+cppQueue q(4, 10, IMPLEMENTATION, true);
 float max_reading = 0;
 float min_reading = 0;
 
@@ -103,6 +103,9 @@ void push_to_queue(float th1, float th2, float th3, float temp){
     }
     else if (strcmp(sig_choice,TEMP) == 0){
         q.push(&temp);
+    }
+    else {
+        lv_textarea_set_placeholder_text(ui_cmdtextarea,"> INVALID SIGNAL CHOICE");
     }
 }
 

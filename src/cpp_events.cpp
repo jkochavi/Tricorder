@@ -28,7 +28,7 @@ void sendpress(const char * txt, const char * txt2)
     // was pressed, like lowerase,uppercase,backspace,speical chars, etc...
     else {
         if (strcmp(txt, BACKSPACE) == 0){
-            //keyboard.write('\b');
+            keyboard.write('\b');
         }
         else if (strcmp(txt, ENTER) == 0){
             keyboard.write('\n');
@@ -41,4 +41,18 @@ void sendpress(const char * txt, const char * txt2)
         }
     }
 }
+
+bool run_cmd(const char * cmd){
+    bool return_msg = false;
+    char prefix = cmd[0];
+    if (prefix == 'p'){
+        lv_label_set_text(ui_sigchoice,&cmd[1]);
+        return_msg = true;
+    }
+    else {
+        return_msg = false;
+    }
+    return return_msg;
+}
+
 }

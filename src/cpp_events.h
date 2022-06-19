@@ -18,7 +18,7 @@ extern "C"
 
 void sendpress(const char * txt, const char * txt2);
 
-void eval_cmd(const char * cmd);
+bool run_cmd(const char * cmd);
 
 #ifdef __cplusplus
 }

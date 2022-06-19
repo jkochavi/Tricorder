@@ -22,5 +22,13 @@ void keypress(lv_event_t * e)
 
 void execcmd(lv_event_t * e)
 {
-	// Your code here
+	const char * cmd = lv_textarea_get_text(ui_cmdtextarea);
+	bool return_msg = run_cmd(cmd);
+	lv_textarea_set_text(ui_cmdtextarea,"");
+	if (return_msg){
+		lv_textarea_set_placeholder_text(ui_cmdtextarea,"> CMD EXECUTED");
+	}
+	else {
+		lv_textarea_set_placeholder_text(ui_cmdtextarea,"> CMD FAILED");
+	}
 }
