@@ -3,7 +3,7 @@
  * It contains one function compiled in C++ for initializing the Bluetooth HID device, and
  * two functions for the GUI event callbacks that are compiled in C. 
  * @author Jordan Kochavi
- * @date 19 June latest modification
+ * @date June 19th, 2022
  */ 
 
 void init_keyboard();

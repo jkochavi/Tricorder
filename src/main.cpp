@@ -6,7 +6,7 @@
  * yet interface with various sensors modularly. 
  * 
  * @author Jordan Kochavi
- * @date 19 June latest modification
+ * @date June 19th, 2022
  */ 
 #include "Arduino.h"            // Arduino library as part of the Arduino framework
 #include "TFT_eSPI.h"           // Display driver library

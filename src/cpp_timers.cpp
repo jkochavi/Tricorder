@@ -2,7 +2,7 @@
  * This file contains the callback functions for the various timers used in the interace, which 
  * are created in the main script. 
  * @author Jordan Kochavi
- * @date 19 June latest modification
+ * @date June 19th, 2022
  */
 #include "lvgl.h"    // Graphics library
 #include "GUI/ui.h"  // Squareline-generated files

@@ -7,7 +7,7 @@
  * This file includes all of the custom code to be included the auto-generated event callback file.
  * 
  * @author Jordan Kochavi
- * @date 19 June latest modification
+ * @date June 19th, 2022
  */
 #include "BleKeyboard.h"           // Include the Bluetooth HID keyboard library
 #include "lvgl.h"                  // Graphics library

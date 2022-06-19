@@ -3,6 +3,8 @@
  * an MPU6050 accelerometer module and an MCP9808 temperature sensor module. These sensors are connected
  * to the main microcontroller board via I2C. The functions in this file are specific to this module. 
  * The greater programming scheme for this device is to maintain modularity between each sensor board.
+ * @author Jordan Kochavi
+ * @date June 19th, 2022
  */ 
 #include "lvgl.h"                        // Graphics library
 #include "GUI/ui.h"                      // Squareline-generate GUI files

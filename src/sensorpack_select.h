@@ -4,7 +4,7 @@
  * However, the goal is to make several different boards to connect to the device in a modular 
  * fashion.
  * @author Jordan Kochavi
- * @date 19 June latest modification
+ * @date June 19th, 2022
  */
 // Uncomment the sensorpack installed in the device
 #include "sensorpack1.h"
