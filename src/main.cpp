@@ -5,7 +5,6 @@
 #include "cpp_timers.h"
 #include "cpp_events.h"
 #include "sensorpack1.h"
-//#include "SD_functions.h"
 
 // How to set up TFT_eSPI User_Setup.h:
 // ILI9341 driver
