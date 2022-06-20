@@ -50,3 +50,7 @@ def modifytimers(event_struct):
 def execcmd(event_struct):
     return
 
+
+def cmdplaceholder(event_struct):
+    return
+

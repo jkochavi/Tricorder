@@ -32,3 +32,8 @@ void execcmd(lv_event_t * e)
 		lv_textarea_set_placeholder_text(ui_cmdtextarea,"> CMD FAILED");
 	}
 }
+
+void cmdplaceholder(lv_event_t * e)
+{
+	// Your code here
+}

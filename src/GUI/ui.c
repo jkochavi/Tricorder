@@ -84,6 +84,7 @@ static void ui_event_cmdbutton(lv_event_t * e)
     if(event == LV_EVENT_CLICKED) {
         _ui_flag_modify(ui_cmdkeyboard, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
         _ui_flag_modify(ui_cmdtextarea, LV_OBJ_FLAG_HIDDEN, _UI_MODIFY_FLAG_TOGGLE);
+        cmdplaceholder(e);
     }
 }
 static void ui_event_cmdkeyboard(lv_event_t * e)
