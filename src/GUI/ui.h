@@ -33,6 +33,20 @@ extern lv_obj_t * ui_sdcontents;
 extern lv_obj_t * ui_macroconfig;
 extern lv_obj_t * ui_cmdtextarea;
 extern lv_obj_t * ui_cmdkeyboard;
+extern lv_obj_t * ui_Macro;
+extern lv_obj_t * ui_b1;
+extern lv_obj_t * ui_b2;
+extern lv_obj_t * ui_b3;
+extern lv_obj_t * ui_b4;
+extern lv_obj_t * ui_b5;
+extern lv_obj_t * ui_b6;
+extern lv_obj_t * ui_b7;
+extern lv_obj_t * ui_b8;
+extern lv_obj_t * ui_b9;
+extern lv_obj_t * ui_back2;
+extern lv_obj_t * ui_row1;
+extern lv_obj_t * ui_row2;
+extern lv_obj_t * ui_row3;
 
 void clearconsoletext(lv_event_t * e);
 void keypress(lv_event_t * e);
@@ -45,6 +59,7 @@ LV_IMG_DECLARE(ui_img_halfbutton4_png);    // assets\halfbutton4.png
 LV_IMG_DECLARE(ui_img_halfbutton3_png);    // assets\halfbutton3.png
 LV_IMG_DECLARE(ui_img_lcars_png);    // assets\LCARS.png
 LV_IMG_DECLARE(ui_img_halfbutton1_png);    // assets\halfbutton1.png
+LV_IMG_DECLARE(ui_img_macro_png);    // assets\macro.png
 
 
 LV_FONT_DECLARE(ui_font_Regular_Text);
