@@ -375,7 +375,7 @@ void ui_LCARS_screen_init(void)
     else lv_textarea_set_accepted_chars(ui_sdcontents, "");
 
     lv_textarea_set_text(ui_sdcontents, "");
-    lv_textarea_set_placeholder_text(ui_sdcontents, "");
+    lv_textarea_set_placeholder_text(ui_sdcontents, "REFRESH ISOLINEAR CHIP");
 
     lv_obj_set_style_text_color(ui_sdcontents, lv_color_hex(0xFFEE8B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_sdcontents, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -420,7 +420,7 @@ void ui_LCARS_screen_init(void)
     else lv_textarea_set_accepted_chars(ui_cmdtextarea, "");
 
     lv_textarea_set_text(ui_cmdtextarea, "");
-    lv_textarea_set_placeholder_text(ui_cmdtextarea, "ENTER TEXT...");
+    lv_textarea_set_placeholder_text(ui_cmdtextarea, "> ENTER CMD");
 
     lv_obj_add_flag(ui_cmdtextarea, LV_OBJ_FLAG_HIDDEN);
 
