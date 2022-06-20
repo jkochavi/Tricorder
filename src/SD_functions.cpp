@@ -13,8 +13,8 @@ void listDir(fs::FS &fs, const char * dirname, uint8_t levels){
     if (!file.isDirectory()){
       lv_textarea_add_text(ui_sdcontents,file.name());
       lv_textarea_add_text(ui_sdcontents,"\n");
-      file = root.openNextFile();
     }
+    file = root.openNextFile();
   }
 }
 
