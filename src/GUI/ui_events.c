@@ -35,5 +35,5 @@ void execcmd(lv_event_t * e)
 
 void cmdplaceholder(lv_event_t * e)
 {
-	// Your code here
+	lv_textarea_set_placeholder_text(ui_cmdtextarea,"> ENTER CMD");
 }
