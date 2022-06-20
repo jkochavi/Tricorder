@@ -41,6 +41,7 @@ void setup()
 {
    begin_sensors(); // Begin the I2C connection to the sensor pack
    init_keyboard(); // Initialize the bluetooth keyboard connection
+   init_SD_card();  // Initialize the SD card connection
    init_display();  // Initialize and flush the display 
    lv_timer_create(console_timer, 5000, NULL); // Begin timer for the debug console
    lv_timer_create(batterytimer, 30000, NULL); // Begin timer for reading the battery level

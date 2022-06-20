@@ -8,6 +8,8 @@
 
 void init_keyboard();
 
+void init_SD_card();
+
 #ifdef __cplusplus
 extern "C"
 {

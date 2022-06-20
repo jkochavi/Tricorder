@@ -13,12 +13,14 @@
 #include "lvgl.h"                  // Graphics library
 #include "GUI/ui.h"                // Squareline-generated GUI functions
 #include "sensorpack_select.h"     // Specifying which sensors are on the device
+#include "SD_functions.h"          // SD interface library
 // When the LVGL keyboard is interacted with, the auto-generated keyboard callback
 // outputs a char array containing the ID and value of the pressed key. 
 #define BACKSPACE  "\xef\x95\x9A"  // Keyboard output code when a backspace is pressed
 #define ENTER      "\xef\xA2\xA2"  // Keyboard output code when the enter key is pressed
 #define LEFTARROW  "\xef\x81\x93"  // Keyboard output code when the left arrow is pressed
 #define RIGHTARROW "\xef\x81\x94"  // Keyboard output code when the right arrow is pressed
+#define SD_CS      15
 // We also need to check which keyboard configuration is active among the widgets three modes:
 // Lowercase, uppercase, and special characters. 
 enum {
@@ -37,6 +39,13 @@ BleKeyboard keyboard("Tricorder"); // Create keyboard object and name it appropr
 void init_keyboard()
 {
     keyboard.begin(); // Initialize the keyboard
+}
+
+/** @brief Function to initialize the SD card.
+ */
+void init_SD_card()
+{
+    SD.begin(SD_CS);  // Initialize the SD card
 }
 
 // As the Squareline-generated files are compiled in C, we must also compile these event
@@ -103,10 +112,13 @@ bool run_cmd(const char * cmd){
         lv_label_set_text(ui_sigchoice,&cmd[1]); //     Then assign the signal choice
         return_msg = true;                       //     Return success message
     } 
+    else if (prefix == 'r'){                     // If the prefix was "r" for refresh...
+        listDir(SD, "/", 0);                     //     List the SD card directory
+        return_msg = true;                       //     Return success message
+    }
     else {                                       // Otherwise an invalid prefix was entered...
         return_msg = false;                      //     Return failure message
     }
     return return_msg;
 }
-
 }
